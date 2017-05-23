@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елизавета Филонова](https://up.htmlacademy.ru/adaptive/11/user/407377).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Рыбников](https://up.htmlacademy.ru/adaptive/11/user/373011).
 
 ---
 
