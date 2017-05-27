@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Вязание на заказ</title>
+  </head>
+  <body class="individual-order">
+    <header class="individual-order__header page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="http://placehold.it/150x100">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <span class="main-nav__toggle" aria-label="Открыть главное меню"></span>
+        <div class="main-nav__wrapper">
+          <span class="main-nav__close" aria-label="Закрыть главное меню"></span>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--form main-nav__link--active">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--search" href="search.html">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--cart" href="cart.html">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1 class="individual-order__title page-title">Вязание на заказ</h1>
+    <form class="individual-order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
+      <p class="order-form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <fieldset class="order-form__product-type">
+        <h2 class="order-form__product-type-title">Тип</h2>
+        <input class="order-form__product-type-input" type="radio" id="product-type-accessory" name="product-type" value="accessory" checked>
+        <label class="order-form__product-type-item" for="product-type-accessory">Аксессуар для интерьера</label>
+        <input class="order-form__product-type-input" type="radio" id="product-type-toy" name="product-type" value="toy">
+        <label class="order-form__product-type-item" for="product-type-toy">Детская игрушка</label>
+      </fieldset>
+      <fieldset class="order-form__product-color">
+        <h2 class="order-form__product-color-title">Цвет</h2>
+        <input class="order-form__product-color-input" type="checkbox" id="product-color-white" name="product-color-white" checked>
+        <label class="order-form__product-color-item" for="product-color-white">Белый</label>
+        
+        <input class="order-form__product-color-input" type="checkbox" id="product-color-gray" name="product-color-gray" checked>
+        <label class="order-form__product-color-item" for="product-color-gray">Серый</label>
+        
+        <input class="order-form__product-color-input" type="checkbox" id="product-color-tiffany" name="product-color-tiffany">
+        <label class="order-form__product-color-item" for="product-color-tiffany">«Тиффани»</label>
+        
+        <input class="order-form__product-color-input" type="checkbox" id="product-color-black" name="product-color-black">
+        <label class="order-form__product-color-item" for="product-color-black">Черный</label>
+        
+        <input class="order-form__product-color-input" type="checkbox" id="product-color-pink" name="product-color-pink">
+        <label class="order-form__product-color-item" for="product-color-pink">Розовый</label>
+        
+        <input class="order-form__product-color-input" type="checkbox" id="product-color-orange" name="product-color-orange">
+        <label class="order-form__product-color-item" for="product-color-orange">Оранжевый</label>
+      </fieldset>
+      <fieldset class="order-form__customer-full-name">
+        <h2 class="order-form__customer-full-name-title">ФИО</h2>
+        <label class="order-form__customer-name" for="customer-name">Имя:</label>
+        <input class="order-form__customer-name-input" type="text" id="customer-name" name="customer-name" placeholder="Введите ваше имя*">
+        <label class="order-form__customer-surname" for="customer-surname">Фамилия:</label>
+        <input class="order-form__customer-surname-input" type="text" id="customer-surname" name="customer-surname" placeholder="Укажите фамилию*">
+        <label class="order-form__customer-patronymic" for="customer-patronymic">Отчество:</label>
+        <input class="order-form__customer-patronymic-input" type="text" id="customer-patronymic" name="customer-patronymic" placeholder="Отчество, если желаете">
+      </fieldset>
+      <fieldset class="order-form__customer-tel">
+        <h2 class="order-form__customer-tel-title">Тел</h2>
+        <input class="order-form__customer-tel-input" type="tel" id="customer-tel" name="customer-tel" placeholder="+7 ХХХ ХХ ХХ*">
+        <label class="order-form__customer-tel-item" for="customer-tel"></label>
+      </fieldset>
+      <fieldset class="order-form__customer-email">
+        <h2 class="order-form__customer-email-title">E-mail</h2>
+        <input class="order-form__customer-email-input" type="email" id="customer-email" name="customer-email" placeholder="Ваш Email*">
+        <label class="order-form__customer-email-item" for="customer-email"></label>
+      </fieldset>
+      <fieldset class="order-form__extra">
+        <h2 class="order-form__extra-title">Доп</h2>
+        <textarea class="order-form__customer-wishes-input" id="customer-wishes" name="customer-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <label class="order-form__customer-wishes" for="customer-wishes"></label>
+      </fieldset>
+      <p class="order-form__decoding-symbols">*Поля обязательны для заполнения</p>
+      <button class="order-form__btn btn" type="submit">Отправить заказ</button>
+    </form>
+    <footer class="individual-order__footer page-footer">
+      <ul class="page-footer__socials">
+        <li class="page-footer__socials-item">
+          <a class="social-link social-link--inst" href="#">Instagram</a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a class="social-link social-link--fb" href="#">Facebook</a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a class="social-link social-link--tw" href="#">Twitter</a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
