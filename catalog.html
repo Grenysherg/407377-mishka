@@ -89,15 +89,23 @@
     </footer>
     <div class="modal-add-cart">
       <h2 class="modal-add-cart__title">Добавить в корзину</h2>
-      <b class="modal-add-cart__offer">Выберите размер:</b>
-      <form class="modal-add-cart__offer-list" action="https://echo.htmlacademy.ru/" method="get">
-        <input class="modal-add-cart__offer-input" type="radio" id="product-size-s" name="product-size" value="s" checked>
-        <label class="modal-add-cart__offer-item" for="product-size-s">S</label>
-        <input class="modal-add-cart__offer-input" type="radio" id="product-size-m" name="product-size" value="m">
-        <label class="modal-add-cart__offer-item" for="product-size-m">M</label>
-        <input class="modal-add-cart__offer-input" type="radio" id="product-size-l" name="product-size" value="l">
-        <label class="modal-add-cart__offer-item" for="product-size-l">L</label>
-        <button class="modal-add-cart__offer-choose btn btn--modal" type="submit">Добавить</button>
+      <form class="modal-add-cart__offer form-offer" action="https://echo.htmlacademy.ru/" method="get">
+        <b class="form-offer__title">Выберите размер:</b>
+        <ul class="form-offer__list">
+          <li class="form-offer__list-item btn-form">
+            <input class="btn-form__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
+            <label class="btn-form__custom-input" for="product-size-s">S</label>
+          </li>
+          <li class="form-offer__list-item btn-form">
+            <input class="btn-form__input" type="radio" id="product-size-m" name="product-size" value="m">
+            <label class="btn-form__custom-input" for="product-size-m">M</label>
+          </li>
+          <li class="form-offer__list-item btn-form">
+            <input class="btn-form__input" type="radio" id="product-size-l" name="product-size" value="l">
+            <label class="btn-form__custom-input" for="product-size-l">L</label>
+          </li>
+        </ul>
+        <button class="form-offer__choose btn btn--modal" type="submit">Добавить</button>
       </form>
     </div>
   </body>

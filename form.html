@@ -38,71 +38,99 @@
                                   свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="order-form__section">
         <h2 class="order-form__section-title">Тип</h2>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="radio" name="product-type" value="accessory" checked>
-          <span class="order-form__custom-radio-input"></span>
-          <span class="order-form__label">Аксессуар для интерьера</span>
-        </label>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="radio" name="product-type" value="toy">
-          <span class="order-form__custom-radio-input"></span>
-          <span class="order-form__label">Детская игрушка</span>
-        </label>
+        <ul class="order-form__section-list">
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="radio" name="product-type" value="accessory" checked>
+              <span class="choose-form__custom-radio-input"></span>
+              <span class="choose-form__label">Аксессуар для интерьера</span>
+            </label>
+          </li>
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="radio" name="product-type" value="toy">
+              <span class="choose-form__custom-radio-input"></span>
+              <span class="choose-form__label">Детская игрушка</span>
+            </label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="order-form__section">
         <h2 class="order-form__section-title">Цвет</h2>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="checkbox" name="product-color-white" checked>
-          <span class="order-form__custom-checkbox-input"></span>
-          <span class="order-form__label">Белый</span>
-        </label>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="checkbox" name="product-color-gray" checked>
-          <span class="order-form__custom-checkbox-input"></span>
-          <span class="order-form__label">Серый</span>
-        </label>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="checkbox" name="product-color-tiffany">
-          <span class="order-form__custom-checkbox-input"></span>
-          <span class="order-form__label">«Тиффани»</span>
-        </label>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="checkbox" name="product-color-black">
-          <span class="order-form__custom-checkbox-input"></span>
-          <span class="order-form__label">Черный</span>
-        </label>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="checkbox" name="product-color-pink">
-          <span class="order-form__custom-checkbox-input"></span>
-          <span class="order-form__label">Розовый</span>
-        </label>
-        <label class="order-form__section-item">
-          <input class="order-form__input" type="checkbox" name="product-color-orange">
-          <span class="order-form__custom-checkbox-input"></span>
-          <span class="order-form__label">Оранжевый</span>
-        </label>
+        <ul class="order-form__section-list">
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="checkbox" name="product-color-white" checked>
+              <span class="choose-form__custom-checkbox-input"></span>
+              <span class="choose-form__label">Белый</span>
+            </label>
+          </li>
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="checkbox" name="product-color-gray" checked>
+              <span class="choose-form__custom-checkbox-input"></span>
+              <span class="choose-form__label">Серый</span>
+            </label>
+          </li>
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="checkbox" name="product-color-tiffany">
+              <span class="choose-form__custom-checkbox-input"></span>
+              <span class="choose-form__label">«Тиффани»</span>
+            </label>
+          </li>
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="checkbox" name="product-color-black">
+              <span class="choose-form__custom-checkbox-input"></span>
+              <span class="choose-form__label">Черный</span>
+            </label>
+          </li>
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="checkbox" name="product-color-pink">
+              <span class="choose-form__custom-checkbox-input"></span>
+              <span class="choose-form__label">Розовый</span>
+            </label>
+          </li>
+          <li class="order-form__section-list-item">
+            <label class="choose-form">
+              <input class="choose-form__input" type="checkbox" name="product-color-orange">
+              <span class="choose-form__custom-checkbox-input"></span>
+              <span class="choose-form__label">Оранжевый</span>
+            </label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="order-form__section">
         <h2 class="order-form__section-title">ФИО</h2>
-        <label class="order-form__text-input-title" for="customer-name">Имя:</label>
-        <input class="order-form__text-input" type="text" id="customer-name" name="customer-name" placeholder="Введите ваше имя*">
-        <label class="order-form__text-input-title" for="customer-surname">Фамилия:</label>
-        <input class="order-form__text-input" type="text" id="customer-surname" name="customer-surname" placeholder="Укажите фамилию*">
-        <label class="order-form__text-input-title" for="customer-patronymic">Отчество:</label>
-        <input class="order-form__text-input" type="text" id="customer-patronymic" name="customer-patronymic" placeholder="Отчество, если желаете">
+        <ul class="order-form__section-list">
+          <li class="order-form__section-list-item text-form">
+            <label class="text-form__title" for="customer-name">Имя:</label>
+            <input class="text-form__input" type="text" id="customer-name" name="customer-name" placeholder="Введите ваше имя*">
+          </li>
+          <li class="order-form__section-list-item text-form">
+            <label class="text-form__title" for="customer-surname">Фамилия:</label>
+            <input class="text-form__input" type="text" id="customer-surname" name="customer-surname" placeholder="Укажите фамилию*">
+          </li>
+          <li class="order-form__section-list-item text-form">
+            <label class="text-form__title" for="customer-patronymic">Отчество:</label>
+            <input class="text-form__input" type="text" id="customer-patronymic" name="customer-patronymic" placeholder="Отчество, если желаете">
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="order-form__section">
         <h2 class="order-form__section-title">Тел</h2>
-        <label class="order-form__section-item">
-          <input class="order-form__text-input" type="tel" name="customer-tel" placeholder="+7 ХХХ ХХ ХХ*">
-          <img class="order-form__text-input-icon" src="http://placehold.it/150x100">
+        <label class="text-form">
+          <input class="text-form__input" type="tel" name="customer-tel" placeholder="+7 ХХХ ХХ ХХ*">
+          <img class="text-form__icon" src="http://placehold.it/150x100">
         </label>
       </fieldset>
       <fieldset class="order-form__section">
         <h2 class="order-form__section-title">E-mail</h2>
-        <label class="order-form__section-item">
-          <input class="order-form__text-input" type="email" name="customer-email" placeholder="Ваш Email*">
-          <img class="order-form__text-input-icon" src="http://placehold.it/150x100">
+        <label class="text-form">
+          <input class="text-form__input" type="email" name="customer-email" placeholder="Ваш Email*">
+          <img class="text-form__icon" src="http://placehold.it/150x100">
         </label>
       </fieldset>
       <fieldset class="order-form__section">
