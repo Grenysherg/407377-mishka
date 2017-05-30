@@ -124,27 +124,14 @@
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__table">
-        <tbody>
-          <tr class="contacts__item">
-            <td class="contacts__name">e-mail:</td>
-            <td class="contacts__value">
-              <a href="#">info@mimimishkashop.ru</a>
-            </td>
-          </tr>
-          <tr class="contacts__item">
-            <td class="contacts__name">Адрес:</td>
-            <td class="contacts__value">г. Санкт-Петербург,
-              <br>
-                                        ул. Большая
-              <br>
-                                        Конюшенная,
-              <br>
-                                        д. 19/8, офис 101
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <p class="contacts__item">
+        <b class="contacts__item-name">e-mail:</b>
+        <a class="contacts__item-value" href="#">info@mimimishkashop.ru</a>
+      </p>
+      <p class="contacts__item">
+        <b class="contacts__item-name">Адрес:</b>
+        <b class="contacts__item-value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</b>
+      </p>
       <a class="contacts__location" href="location.html">
         <img class="contacts__location-img" src="http://placehold.it/150x100">
       </a>
@@ -172,17 +159,17 @@
       <form class="modal-add-cart__offer form-offer" action="https://echo.htmlacademy.ru/" method="get">
         <b class="form-offer__title">Выберите размер:</b>
         <ul class="form-offer__list">
-          <li class="form-offer__list-item btn-form">
-            <input class="btn-form__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
-            <label class="btn-form__custom-input" for="product-size-s">S</label>
+          <li class="form-offer__list-item input-like-btn-form">
+            <input class=input-like-btn-form__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
+            <label class="input-like-btn-form__custom-input" for="product-size-s">S</label>
           </li>
-          <li class="form-offer__list-item btn-form">
-            <input class="btn-form__input" type="radio" id="product-size-m" name="product-size" value="m">
-            <label class="btn-form__custom-input" for="product-size-m">M</label>
+          <li class="form-offer__list-item input-like-btn-form">
+            <input class="input-like-btn-form__input" type="radio" id="product-size-m" name="product-size" value="m">
+            <label class="input-like-btn-form__custom-input" for="product-size-m">M</label>
           </li>
-          <li class="form-offer__list-item btn-form">
-            <input class="btn-form__input" type="radio" id="product-size-l" name="product-size" value="l">
-            <label class="btn-form__custom-input" for="product-size-l">L</label>
+          <li class="form-offer__list-item input-like-btn-form">
+            <input class="input-like-btn-form__input" type="radio" id="product-size-l" name="product-size" value="l">
+            <label class="input-like-btn-form__custom-input" for="product-size-l">L</label>
           </li>
         </ul>
         <button class="form-offer__choose btn btn--modal" type="submit">Добавить</button>
