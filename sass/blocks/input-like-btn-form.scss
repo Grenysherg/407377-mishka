@@ -1,0 +1,34 @@
+.input-like-btn-form {
+}
+
+.input-like-btn-form__input {
+  @include visually-hidden;
+}
+
+.input-like-btn-form__custom-input {
+  display: flex;
+  width: 82px;
+  height: 52px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $black--lightest;
+  text-transform: none;
+
+  border: 2px solid rgba($black--lightest, .1);
+
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba($black--lightest, .3);
+  }
+}
+
+.input-like-btn-form__label {
+  flex-shrink: 0;
+  margin: auto;
+}

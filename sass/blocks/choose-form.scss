@@ -1,0 +1,36 @@
+.choose-form {
+  display: flex;
+  align-items: flex-start;
+
+  cursor: pointer;
+}
+
+.choose-form__input {
+  @include visually-hidden;
+}
+
+.choose-form__custom {
+  flex-shrink: 0;
+  width: 40px;
+  height: 39px;
+
+  border: 2px solid $black--lightest;
+
+  &--radio {
+    border-radius: 50%;
+  }
+}
+
+.choose-form__label {
+  margin-left: 23px;
+  padding-top: 9px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $black;
+  text-transform: none;
+}

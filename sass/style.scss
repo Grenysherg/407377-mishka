@@ -1,0 +1,29 @@
+@import "normalize.scss";
+
+@import "mixins.scss";
+@import "variables.scss";
+
+@import "global/fonts.scss";
+@import "global/type.scss";
+
+@import "blocks/btn.scss";
+@import "blocks/btn-nav-list.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-catalog.scss";
+@import "blocks/week-product.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-title.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-preview.scss";
+@import "blocks/production.scss";
+@import "blocks/order-form.scss";
+@import "blocks/choose-form.scss";
+@import "blocks/text-form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-link.scss";
+@import "blocks/modal-add-cart.scss";
+@import "blocks/form-offer.scss";
+@import "blocks/input-like-btn-form.scss";

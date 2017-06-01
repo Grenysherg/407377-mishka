@@ -1,0 +1,25 @@
+.catalog {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: $white;
+}
+
+.catalog__container {
+  @include container;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog__list-item {
+  margin-bottom: 29px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
