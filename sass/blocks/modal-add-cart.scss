@@ -3,12 +3,8 @@
   padding-bottom: 46px;
 
   background-color: $white;
-  border: 1px solid $gray--darkest;
+  border: 1px solid $gray-199;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-}
-
-.modal-add-cart__container {
-  @include container;
 }
 
 .modal-add-cart__title {

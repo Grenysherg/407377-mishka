@@ -1,6 +1,3 @@
-.input-like-btn-form {
-}
-
 .input-like-btn-form__input {
   @include visually-hidden;
 }
@@ -10,25 +7,24 @@
   width: 82px;
   height: 52px;
 
+  border: 2px solid rgba($gray-68, .1);
+
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba($gray-68, .3);
+  }
+}
+
+.input-like-btn-form__label {
+  margin: auto;
+
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   font-family: $open-sans;
   letter-spacing: 0;
-  color: $black--lightest;
+  color: $gray-68;
   text-transform: none;
-
-  border: 2px solid rgba($black--lightest, .1);
-
-  cursor: pointer;
-
-  &:hover {
-    border-color: rgba($black--lightest, .3);
-  }
-}
-
-.input-like-btn-form__label {
-  flex-shrink: 0;
-  margin: auto;
 }

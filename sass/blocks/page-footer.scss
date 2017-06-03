@@ -1,9 +1,5 @@
 .page-footer {
-  background-color: $gray;
-}
-
-.page-footer__container {
-  @include container;
+  background-color: $gray-241;
 }
 
 .page-footer__socials {
@@ -19,6 +15,10 @@
 }
 
 .page-footer__copyright {
+  margin: 0;
+}
+
+.page-footer__copyright-title {
   font-style: normal;
   font-weight: 700;
   font-size: 19px;

@@ -1,7 +1,9 @@
 .page-header {
   background-color: $white;
+  border-top: 1px solid $gray-236;
+  border-bottom: 1px solid $gray-236;
 }
 
-.page-header__container {
-  @include container;
+.page-header__nav {
+  margin-bottom: -1px;
 }

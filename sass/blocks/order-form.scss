@@ -5,10 +5,6 @@
   background-color: $white;
 }
 
-.order-form__container {
-  @include container;
-}
-
 .order-form__desc {
   margin: 0;
   margin-bottom: 17px;
@@ -19,7 +15,7 @@
   line-height: 24px;
   font-family: $open-sans;
   letter-spacing: 0;
-  color: $black--lightest;
+  color: $gray-68;
   text-transform: none;
 }
 
@@ -48,7 +44,7 @@
 
     display: block;
 
-    border-bottom: 1px solid $green;
+    border-bottom: 1px solid $downy;
   }
 
   &--text-form {
@@ -73,30 +69,20 @@
   line-height: 16px;
   font-family: $open-sans;
   letter-spacing: 0;
-  color: $green;
+  color: $downy;
   text-transform: uppercase;
 
   background-color: $white;
 }
 
-.order-form__section-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.order-form__section-list-item {
+.order-form__section-item {
   margin-bottom: 15px;
 
   &:last-of-type {
     margin-bottom: 0;
   }
 
-  &--checkbox {
-    margin-bottom: 22px;
-  }
-
+  &--checkbox,
   &--text-form {
     margin-bottom: 22px;
   }
@@ -112,6 +98,6 @@
   line-height: 16px;
   font-family: $open-sans;
   letter-spacing: 0;
-  color: $black--lightest;
+  color: $gray-68;
   text-transform: none;
 }

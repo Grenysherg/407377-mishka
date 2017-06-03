@@ -7,57 +7,62 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container">
-        <a class="page-header__logo logo">
+      <div class="container">
+        <a class="logo page-header__logo" href="index.html">
           <img class="logo__img" src="http://placehold.it/150x100">
         </a>
-        <nav class="page-header__nav main-nav">
-          <span class="main-nav__toggle" aria-label="Открыть главное меню"></span>
-          <div class="main-nav__wrapper">
-            <span class="main-nav__close" aria-label="Закрыть главное меню"></span>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__item">
-                <!--<img class="main-nav__link-icon" src="http://placehold.it/150x100">-->
-                <a class="main-nav__link main-nav__link--icon" href="search.html">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__item">
-                <!--<img class="main-nav__link-icon" src="http://placehold.it/150x100">-->
-                <a class="main-nav__link main-nav__link--icon" href="cart.html">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <span class="main-nav__toggle" aria-label="Открыть главное меню"></span>
+        <span class="main-nav__close" aria-label="Закрыть главное меню"></span>
       </div>
+      <nav class="main-nav page-header__nav">
+        <a class="main-nav__item" href="catalog.html">
+          <div class="container">
+            <b class="main-nav__item-text">Каталог товаров</b>
+          </div>
+        </a>
+        <a class="main-nav__item" href="form.html">
+          <div class="container">
+            <b class="main-nav__item-text">Вязание на заказ</b>
+          </div>
+        </a>
+        <a class="main-nav__item" href="search.html">
+          <div class="container">
+            <span class="main-nav__item-icon"></span>
+            <b class="main-nav__item-text">Поиск по сайту</b>
+          </div>
+        </a>
+        <a class="main-nav__item" href="cart.html">
+          <div class="container">
+            <span class="main-nav__item-icon"></span>
+            <b class="main-nav__item-text">Корзина: пока пуста</b>
+          </div>
+        </a>
+      </nav>
     </header>
-    <section class="main-catalog">
-      <h2 class="main-catalog__title">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h2>
-      <ul class="main-catalog__list">
-        <li class="main-catalog__item">
-          <a class="main-catalog__link" href="interior-items.html">
-            <div class="main-catalog__link-container">
-              <b class="main-catalog__link-title">Предметы интерьера</b>
-              <!--<img class="main-catalog__link-img" src="http://placehold.it/150x100">-->
-            </div>
-          </a>
-        </li>
-        <li class="main-catalog__item">
-          <a class="main-catalog__link main-catalog__link--color-darker" href="children-toys.html">
-            <div class="main-catalog__link-container">
-              <b class="main-catalog__link-title">Детские игрушки</b>
-              <!--<img class="main-catalog__link-img" src="http://placehold.it/150x100">-->
-            </div>
-          </a>
-        </li>
-      </ul>
+    <section class="page-title page-title--index">
+      <h1 class="container page-title__text page-title__text--index">Милые&nbsp;штуки ручной
+                                                                     работы&nbsp;для&nbsp;дома</h1>
     </section>
+    <ul class="main-catalog">
+      <li class="main-catalog__item">
+        <a class="main-catalog__link" href="interior-items.html">
+          <div class="container">
+            <b class="main-catalog__link-title">Предметы интерьера</b>
+            <span class="main-catalog__link-icon"></span>
+          </div>
+        </a>
+      </li>
+      <li class="main-catalog__item">
+        <a class="main-catalog__link main-catalog__link--color-darker" href="children-toys.html">
+          <div class="container">
+            <b class="main-catalog__link-title">Детские игрушки</b>
+            <span class="main-catalog__link-icon"></span>
+          </div>
+        </a>
+      </li>
+    </ul>
     <article class="week-product">
-      <div class="week-product__container">
+      <div class="container">
         <h2 class="week-product__title">Вязаные корзинки</h2>
         <b class="week-product__title-desc">Товар недели</b>
         <p class="week-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх
@@ -80,127 +85,124 @@
         </table>
         <img class="week-product__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
         <b class="week-product__price">Цена: 990 руб.</b>
-        <a class="week-product__order btn" href="#">Заказать</a>
+        <a class="btn week-product__order" href="#">Заказать</a>
       </div>
     </article>
     <section class="advantages">
-      <div class="advantages__container">
+      <div class="container">
         <h2 class="advantages__title">Коротко о нас:</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <img class="advantages__item-icon" src="http://placehold.it/150x100">
-            Экологически чистые материалы
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__item-icon" src="http://placehold.it/150x100">
-            Скандинавский стиль по российской цене
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__item-icon" src="http://placehold.it/150x100">
-            Увеличивает лайки на фотографиях
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__item-icon" src="http://placehold.it/150x100">
-            Связано вручную с любовью и умилением
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__item-icon" src="http://placehold.it/150x100">
-            Поддержка отечественного производителя
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__item-icon" src="http://placehold.it/150x100">
-            Поставляется в подарочной упаковке
-          </li>
-        </ul>
+        <p class="advantages__item">
+          <span class="advantages__item-icon"></span>
+          <b class="advantages__item-text">Экологически чистые материалы</b>
+        </p>
+        <p class="advantages__item">
+          <span class="advantages__item-icon"></span>
+          <b class="advantages__item-text">Скандинавский стиль по российской цене</b>
+        </p>
+        <p class="advantages__item">
+          <span class="advantages__item-icon"></span>
+          <b class="advantages__item-text">Увеличивает лайки на фотографиях</b>
+        </p>
+        <p class="advantages__item">
+          <span class="advantages__item-icon"></span>
+          <b class="advantages__item-text">Связано вручную с любовью и умилением</b>
+        </p>
+        <p class="advantages__item">
+          <span class="advantages__item-icon"></span>
+          <b class="advantages__item-text">Поддержка отечественного производителя</b>
+        </p>
+        <p class="advantages__item">
+          <span class="advantages__item-icon"></span>
+          <b class="advantages__item-text">Поставляется в подарочной упаковке</b>
+        </p>
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__container">
+      <div class="container">
         <h2 class="reviews__title">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <blockquote class="reviews__item-desc">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-              стильными, а также набирают больше лайков!
-              <cite class="reviews__item-author">
-                <span class="reviews__item-author-name">Анастасия Красильникова</span>
-                <span class="reviews__item-author-email">@misssssiskras</span>
-              </cite>
-            </blockquote>
-          </li>
-        </ul>
-        <div class="reviews__nav-list">
-          <button class="reviews__nav-list-item btn-nav-list btn-nav-list--prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__nav-list-item btn-nav-list btn-nav-list--next" type="button">Следующий отзыв</button>
+        <blockquote class="reviews__item">
+          <span class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+          инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</span>
+          <cite class="reviews__item-author">
+            <b class="reviews__item-author-name">Анастасия Красильникова</b>
+            <b class="reviews__item-author-email">@misssssiskras</b>
+          </cite>
+        </blockquote>
+        <div class="reviews__nav">
+          <button class="reviews__nav-item btn-nav btn-nav--prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__nav-item btn-nav btn-nav--next" type="button">Следующий отзыв</button>
         </div>
-        <a class="reviews__write btn" href="write-review.html">Написать</a>
+        <a class="btn reviews__write" href="write-review.html">Написать</a>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container">
+      <div class="container">
         <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__item">
-          <b class="contacts__item-name">e-mail:</b>
-          <a class="contacts__item-value contacts__item-value--link" href="#">info@mimimishkashop.ru</a>
-        </p>
-        <p class="contacts__item">
-          <b class="contacts__item-name">aдрес:</b>
-          <b class="contacts__item-value contacts__item-value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</b>
-        </p>
+        <dl class="contacts__list">
+          <dt class="contacts__item-name">e-mail:</dt>
+          <dd class="contacts__item-value">
+            <a class="contacts__item-link" href="#">info@mimimishkashop.ru</a>
+          </dd>
+          <dt class="contacts__item-name">aдрес:</dt>
+          <dd class="contacts__item-value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис
+                                           101
+          </dd>
+        </dl>
       </div>
       <a class="contacts__location" href="location.html">
-        <img class="contacts__location-img" src="img/map-mobile@1x.jpg">
+        <img class="contacts__location-img" src="img/map-mobile@1x.jpg" alt="Расположение">
       </a>
-      <div class="contacts__container">
-        <a class="contacts__write-company btn" href="write-company.html">Напишите нам</a>
+      <div class="container">
+        <a class="btn contacts__write-company" href="write-company.html">Напишите нам</a>
       </div>
     </section>
     <footer class="page-footer">
-      <div class="page-header__container">
+      <div class="container">
         <ul class="page-footer__socials">
           <li class="page-footer__socials-item">
-            <a class="social-link social-link--inst" href="#">Instagram</a>
+            <a class="social-link social-link--inst" href="#" target="_blank">Instagram</a>
           </li>
           <li class="page-footer__socials-item">
-            <a class="social-link social-link--fb" href="#">Facebook</a>
+            <a class="social-link social-link--fb" href="#" target="_blank">Facebook</a>
           </li>
           <li class="page-footer__socials-item">
-            <a class="social-link social-link--tw" href="#">Twitter</a>
+            <a class="social-link social-link--tw" href="#" target="_blank">Twitter</a>
           </li>
         </ul>
         <p class="page-footer__copyright">
-          Разработано
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="page-footer__copyright-title">Разработано</b>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML
+                                                                                                                  Academy
+          </a>
         </p>
       </div>
     </footer>
     <div class="modal-add-cart">
-      <div class="modal-add-cart__container">
+      <div class="container">
         <h2 class="modal-add-cart__title">Добавить в корзину</h2>
-        <form class="modal-add-cart__offer form-offer" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="form-offer modal-add-cart__offer" action="https://echo.htmlacademy.ru/" method="post">
           <b class="form-offer__title">Выберите размер:</b>
-          <ul class="form-offer__list">
-            <li class="form-offer__list-item input-like-btn-form">
-              <input class="input-like-btn-form__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
-              <label class="input-like-btn-form__custom-input" for="product-size-s">
-                <span class="input-like-btn-form__label">S</span>
-              </label>
-            </li>
-            <li class="form-offer__list-item input-like-btn-form">
-              <input class="input-like-btn-form__input" type="radio" id="product-size-m" name="product-size" value="m">
-              <label class="input-like-btn-form__custom-input" for="product-size-m">
-                <span class="input-like-btn-form__label">M</span>
-              </label>
-            </li>
-            <li class="form-offer__list-item input-like-btn-form">
-              <input class="input-like-btn-form__input" type="radio" id="product-size-l" name="product-size" value="l">
-              <label class="input-like-btn-form__custom-input" for="product-size-l">
-                <span class="input-like-btn-form__label">L</span>
-              </label>
-            </li>
-          </ul>
-          <button class="form-offer__choose btn btn--modal" type="submit">Добавить</button>
+          <div class="form-offer__list">
+            <label class="input-like-btn-form form-offer__item">
+              <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
+              <span class="input-like-btn-form__custom-input">
+                <b class="input-like-btn-form__label">S</b>
+              </span>
+            </label>
+            <label class="input-like-btn-form form-offer__item">
+              <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
+              <span class="input-like-btn-form__custom-input">
+                <b class="input-like-btn-form__label">M</b>
+              </span>
+            </label>
+            <label class="input-like-btn-form form-offer__item">
+              <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
+              <span class="input-like-btn-form__custom-input">
+                <b class="input-like-btn-form__label">L</b>
+              </span>
+            </label>
+          </div>
+          <button class="btn btn--modal form-offer__choose" type="submit">Добавить</button>
         </form>
       </div>
     </div>

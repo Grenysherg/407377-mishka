@@ -1,11 +1,12 @@
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+.main-nav {
+  background-color: $white;
 }
 
-.main-nav__link {
+.main-nav__item {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 29px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -14,4 +15,6 @@
   letter-spacing: 0;
   color: $black;
   text-transform: none;
+
+  border-bottom: 1px solid $gray-236;
 }
