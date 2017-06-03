@@ -3,110 +3,160 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__img" src="http://placehold.it/150x100">
-      </a>
-      <nav class="page-header__nav main-nav">
+      <div class="container">
+        <a class="logo page-header__logo" href="index.html">
+          <img class="logo__img" src="http://placehold.it/150x100">
+        </a>
         <span class="main-nav__toggle" aria-label="Открыть главное меню"></span>
-        <div class="main-nav__wrapper">
-          <span class="main-nav__close" aria-label="Закрыть главное меню"></span>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <img class="main-nav__link-icon" src="http://placehold.it/150x100">
-              <a class="main-nav__link main-nav__link--icon" href="search.html">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <img class="main-nav__link-icon" src="http://placehold.it/150x100">
-              <a class="main-nav__link main-nav__link--icon" href="cart.html">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <span class="main-nav__close" aria-label="Закрыть главное меню"></span>
+      </div>
+      <nav class="main-nav page-header__nav">
+        <a class="main-nav__item">
+          <div class="container">
+            <b class="main-nav__item-text">Каталог товаров</b>
+          </div>
+        </a>
+        <a class="main-nav__item" href="form.html">
+          <div class="container">
+            <b class="main-nav__item-text">Вязание на заказ</b>
+          </div>
+        </a>
+        <a class="main-nav__item" href="search.html">
+          <div class="container">
+            <span class="main-nav__item-icon"></span>
+            <b class="main-nav__item-text">Поиск по сайту</b>
+          </div>
+        </a>
+        <a class="main-nav__item" href="cart.html">
+          <div class="container">
+            <span class="main-nav__item-icon"></span>
+            <b class="main-nav__item-text">Корзина: пока пуста</b>
+          </div>
+        </a>
       </nav>
     </header>
-    <h1 class="page-title">Каталог товаров</h1>
-    <ul class="catalog-list">
-      <li class="catalog-list__item product-preview">
-        <a class="product-preview__img-link" href="#">
-          <img class="product-preview__img" src="http://placehold.it/150x100">
-        </a>
-        <a class="product-preview__title" href="#">Зайчик-попрыгайчик</a>
-        <p class="product-preview__characters">Рост 30 см, вес 200 г</p>
-        <b class="product-preview__price">1 200 руб.</b>
-        <a class="product-preview__add-cart" href="#">Добавить в корзину</a>
-      </li>
-      <li class="catalog-list__item product-preview">
-        <a class="product-preview__img-link" href="#">
-          <img class="product-preview__img" src="http://placehold.it/150x100">
-        </a>
-        <a class="product-preview__title" href="#">Корзинка для белья</a>
-        <p class="product-preview__characters">Диаметр 15 см, высота 10 см</p>
-        <b class="product-preview__price">690 руб.</b>
-        <a class="product-preview__add-cart" href="#">Добавить в корзину</a>
-      </li>
-      <li class="catalog-list__item product-preview">
-        <a class="product-preview__img-link" href="#">
-          <img class="product-preview__img" src="http://placehold.it/150x100">
-        </a>
-        <a class="product-preview__title" href="#">Большая корзинка для игрушек</a>
-        <p class="product-preview__characters">Диаметр 30 см, высота 30 см</p>
-        <b class="product-preview__price">1 500 руб.</b>
-        <a class="product-preview__add-cart" href="#">Добавить в корзину</a>
-      </li>
-    </ul>
+    <section class="page-title">
+      <h1 class="container page-title__text">Каталог товаров</h1>
+    </section>
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог</h2>
+      <div class="container">
+        <article class="product-preview catalog__item">
+          <a class="product-preview__img-link" href="#">
+            <img class="product-preview__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </a>
+          <div class="product-preview__info">
+            <h2 class="product-preview__title">
+              <a class="product-preview__title-link" href="#">Зайчик-попрыгайчик</a>
+            </h2>
+            <p class="product-preview__characters">Рост 30 см, вес 200 г</p>
+            <div class="product-preview__buying">
+              <b class="product-preview__price">1 200 руб.</b>
+              <a class="product-preview__add-cart" href="#">Добавить в корзину</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-preview catalog__item">
+          <a class="product-preview__img-link" href="#">
+            <img class="product-preview__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+          </a>
+          <div class="product-preview__info">
+            <h2 class="product-preview__title">
+              <a class="product-preview__title-link" href="#">Корзинка для белья</a>
+            </h2>
+            <p class="product-preview__characters">Диаметр 15 см, высота 10 см</p>
+            <div class="product-preview__buying">
+              <b class="product-preview__price">690 руб.</b>
+              <a class="product-preview__add-cart" href="#">Добавить в корзину</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-preview catalog__item">
+          <a class="product-preview__img-link" href="#">
+            <img class="product-preview__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+          </a>
+          <div class="product-preview__info">
+            <h2 class="product-preview__title">
+              <a class="product-preview__title-link" href="#">Большая корзинка для игрушек</a>
+            </h2>
+            <p class="product-preview__characters">Диаметр 30 см, высота 30 см</p>
+            <div class="product-preview__buying">
+              <b class="product-preview__price">1 500 руб.</b>
+              <a class="product-preview__add-cart" href="#">Добавить в корзину</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
     <article class="production">
-      <h2 class="production__title">Процесс производства</h2>
-      <img class="production__video" src="http://placehold.it/150x100">
-      <button class="production__video-btn">Запустить видео</button>
-      <p class="production__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-                                        появляются наши товары.</p>
-      <a class="production__make-order btn btn--smaller" href="#">Сделать заказ</a>
+      <div class="container">
+        <h2 class="production__title">
+          <span class="production__title-icon"></span>
+          <span class="production__title-text">Процесс производства</span>
+        </h2>
+        <div class="production__video">
+          <img class="production__video-img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+          <button class="video-btn production__video-btn" type="button">Запустить видео</button>
+        </div>
+        <div class="production__video-info">
+          <p class="production__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+                                            как появляются наши товары.</p>
+          <a class="btn production__make-order" href="#">Сделать заказ</a>
+        </div>
+      </div>
     </article>
     <footer class="page-footer">
-      <ul class="page-footer__socials">
-        <li class="page-footer__socials-item">
-          <a class="social-link social-link--inst" href="#">Instagram</a>
-        </li>
-        <li class="page-footer__socials-item">
-          <a class="social-link social-link--fb" href="#">Facebook</a>
-        </li>
-        <li class="page-footer__socials-item">
-          <a class="social-link social-link--tw" href="#">Twitter</a>
-        </li>
-      </ul>
-      <p class="page-footer__copyright">
-        Разработано
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </p>
-    </footer>
-    <div class="modal-add-cart">
-      <h2 class="modal-add-cart__title">Добавить в корзину</h2>
-      <form class="modal-add-cart__offer form-offer" action="https://echo.htmlacademy.ru/" method="get">
-        <b class="form-offer__title">Выберите размер:</b>
-        <ul class="form-offer__list">
-          <li class="form-offer__list-item input-like-btn-form">
-            <input class=input-like-btn-form__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
-            <label class="input-like-btn-form__custom-input" for="product-size-s">S</label>
+      <div class="container">
+        <ul class="page-footer__socials">
+          <li class="page-footer__socials-item">
+            <a class="social-link social-link--inst" href="#" target="_blank">Instagram</a>
           </li>
-          <li class="form-offer__list-item input-like-btn-form">
-            <input class="input-like-btn-form__input" type="radio" id="product-size-m" name="product-size" value="m">
-            <label class="input-like-btn-form__custom-input" for="product-size-m">M</label>
+          <li class="page-footer__socials-item">
+            <a class="social-link social-link--fb" href="#" target="_blank">Facebook</a>
           </li>
-          <li class="form-offer__list-item input-like-btn-form">
-            <input class="input-like-btn-form__input" type="radio" id="product-size-l" name="product-size" value="l">
-            <label class="input-like-btn-form__custom-input" for="product-size-l">L</label>
+          <li class="page-footer__socials-item">
+            <a class="social-link social-link--tw" href="#" target="_blank">Twitter</a>
           </li>
         </ul>
-        <button class="form-offer__choose btn btn--modal" type="submit">Добавить</button>
-      </form>
+        <p class="page-footer__copyright">
+          <b class="page-footer__copyright-title">Разработано</b>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML
+                                                                                                                  Academy</a>
+        </p>
+      </div>
+    </footer>
+    <div class="modal-add-cart">
+      <div class="container">
+        <h2 class="modal-add-cart__title">Добавить в корзину</h2>
+        <form class="form-offer modal-add-cart__offer" action="https://echo.htmlacademy.ru/" method="post">
+          <b class="form-offer__title">Выберите размер:</b>
+          <div class="form-offer__list">
+            <label class="input-like-btn-form form-offer__item">
+              <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
+              <span class="input-like-btn-form__custom-input">
+                <b class="input-like-btn-form__label">S</b>
+              </span>
+            </label>
+            <label class="input-like-btn-form form-offer__item">
+              <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
+              <span class="input-like-btn-form__custom-input">
+                <b class="input-like-btn-form__label">M</b>
+              </span>
+            </label>
+            <label class="input-like-btn-form form-offer__item">
+              <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
+              <span class="input-like-btn-form__custom-input">
+                <b class="input-like-btn-form__label">L</b>
+              </span>
+            </label>
+          </div>
+          <button class="btn btn--modal form-offer__choose" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

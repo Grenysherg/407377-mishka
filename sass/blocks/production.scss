@@ -1,0 +1,58 @@
+.production {
+  padding-bottom: 58px;
+
+  background-color: $white;
+}
+
+.production__title {
+  margin: 0;
+  padding-top: 23px;
+  padding-right: 28px;
+  padding-bottom: 24px;
+
+  border: 1px solid $gray-236;
+}
+
+.production__title-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $black;
+  text-transform: none;
+}
+
+.production__video {
+  position: relative;
+}
+
+.production__video-btn {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+}
+
+.production__video-info {
+  padding-top: 25px;
+  padding-right: 33px;
+  padding-bottom: 32px;
+  padding-left: 33px;
+
+  border: 1px solid $gray-236;
+}
+
+.production__video-desc {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $gray-68;
+  text-transform: none;
+}

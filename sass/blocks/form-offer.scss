@@ -1,0 +1,24 @@
+.form-offer__title {
+  display: block;
+  margin-bottom: 23px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $gray-68;
+  text-transform: none;
+  text-align: center;
+}
+
+.form-offer__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.form-offer__list-item {
+  flex-shrink: 0;
+}

@@ -1,0 +1,18 @@
+.catalog {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: $white;
+}
+
+.catalog__title {
+  @include visually-hidden;
+}
+
+.catalog__item {
+  margin-bottom: 29px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

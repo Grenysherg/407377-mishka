@@ -1,0 +1,31 @@
+.main-catalog {
+  margin: 0;
+  padding: 0;
+
+  background-color: $gray-249;
+
+  list-style: none;
+}
+
+.main-catalog__link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+
+  background-color: $downy;
+
+  &--color-darker {
+    background-color: $fountain-blue;
+  }
+}
+
+.main-catalog__link-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $white;
+  text-transform: none;
+}

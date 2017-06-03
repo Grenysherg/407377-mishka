@@ -1,0 +1,29 @@
+.page-title {
+  background-color: $gray-241;
+
+  &--index {
+    background-color: $gray-249;
+  }
+}
+
+.page-title__text {
+  margin: 0;
+  padding-top: 71px;
+  padding-bottom: 76px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $black;
+  text-transform: none;
+  text-align: center;
+
+  &--index {
+    padding-bottom: 121px;
+
+    background: $gray-249 url("/img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  }
+}
