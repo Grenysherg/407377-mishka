@@ -5,3 +5,19 @@
   padding-right: $mobile-padding;
   padding-left: $mobile-padding;
 }
+
+@media (min-width: $tablet-container) {
+  .container {
+    width: $tablet-container;
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-container) {
+  .container {
+    width: $desktop-container;
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
+  }
+}

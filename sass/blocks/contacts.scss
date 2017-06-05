@@ -5,9 +5,18 @@
   background-color: $white;
 }
 
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  width: $mobile-container;
+  margin: 0 auto;
+}
+
 .contacts__title {
+  flex-shrink: 0;
   margin: 0;
   margin-bottom: 26px;
+  padding: 0 $mobile-padding;
 
   font-style: normal;
   font-weight: 700;
@@ -20,16 +29,16 @@
 }
 
 .contacts__list {
+  flex-shrink: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 37px;
+  padding: 0 $mobile-padding;
 }
 
 .contacts__item-name,
 .contacts__item-value {
-  flex-shrink: 0;
   margin: 0;
 
   font-style: normal;
@@ -43,6 +52,7 @@
 }
 
 .contacts__item-name {
+  width: 77px;
   margin-bottom: 29px;
 
   &:last-of-type {
@@ -51,7 +61,7 @@
 }
 
 .contacts__item-value {
-  width: 183px;
+  width: 180px;
 }
 
 .contacts__item-link {
@@ -70,8 +80,105 @@
 }
 
 .contacts__location {
+  flex-shrink: 0;
   display: block;
-  width: $mobile-container;
-  margin: 0 auto;
   margin-bottom: 35px;
 }
+
+.contacts__write-company {
+  flex-shrink: 0;
+  align-self: center;
+  width: $mobile-container - 2 * $mobile-padding;
+}
+
+@media (min-width: $tablet-container) {
+  .contacts {
+    padding-top: 61px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__container {
+    width: $tablet-container;
+  }
+
+  .contacts__title {
+    margin-bottom: 49px;
+    padding: 0 $tablet-padding;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__list {
+    margin-bottom: 56px;
+    padding: 0 $tablet-padding;
+  }
+
+  .contacts__item-name,
+  .contacts__item-value {
+    font-size: 17px;
+  }
+
+  .contacts__item-value {
+    width: 230px;
+    margin-right: 77px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &--link {
+      width: 180px;
+    }
+  }
+
+  .contacts__location {
+    margin-bottom: 51px;
+  }
+
+  .contacts__write-company {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-container) {
+  .contacts {
+    padding-top: 142px;
+    padding-bottom: 101px;
+  }
+
+  .contacts__container {
+    width: $desktop-container;
+    padding-right: $desktop-padding;
+    padding-left: 225px;
+  }
+
+  .contacts__title {
+    padding: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__list {
+    width: 350px;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+  .contacts__item-value {
+    margin-right: 17px;
+  }
+
+  .contacts__location {
+    align-self: flex-end;
+    order: 1;
+    margin-top: -457px;
+    margin-bottom: 0;
+  }
+
+  .contacts__write-company {
+    align-self: flex-start;
+  }
+}
+
