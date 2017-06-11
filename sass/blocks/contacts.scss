@@ -40,7 +40,7 @@
     width: 47px;
     height: 81px;
 
-    background: transparent url("/img/icon-flag.svg") no-repeat;
+    background: transparent url("../../img/icon-flag.svg") no-repeat;
   }
 
   @media (min-width: $desktop-container) {
@@ -124,7 +124,7 @@
   }
 
   @media (min-width: $desktop-container) {
-     margin-bottom: 28px;
+    margin-bottom: 28px;
   }
 }
 
@@ -199,4 +199,3 @@
     align-self: flex-start;
   }
 }
-
