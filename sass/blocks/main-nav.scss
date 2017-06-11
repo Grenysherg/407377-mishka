@@ -1,11 +1,102 @@
-.main-nav {
+.main-nav__container {
+  display: none;
+}
+
+.main-nav__toggle {
+  width: 21px;
+  height: 20px;
+
+  background: transparent url("/img/icon-menu-close.svg") no-repeat;
+  border: 0;
+
+  cursor: pointer;
+
+  @include hidden-text();
+}
+
+.main-nav__menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
   background-color: $white;
+
+  list-style: none;
+
+  @media (min-width: $tablet-container) {
+    flex-direction: row;
+
+    background-color: transparent;
+  }
 }
 
 .main-nav__item {
+  flex-shrink: 0;
+  border-bottom: 1px solid $gray-236;
+
+  @media (min-width: $tablet-container) {
+    margin-top: 10px;
+    margin-right: 29px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-container) {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+.main-nav__item:first-of-type {
+  border-top: 1px solid $gray-236;
+
+  @media (min-width: $tablet-container) {
+    border-top: none;
+  }
+}
+
+.main-nav__link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 29px;
+}
+
+.main-nav__link-container {
+  width: $mobile-container;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-right: $mobile-padding;
+  padding-bottom: 28px;
+  padding-left: $mobile-padding;
+
+  @media (min-width: $tablet-container) {
+    width: auto;
+    margin: 0;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-container) {
+    padding-top: 30px;
+    padding-right: 47px;
+    padding-bottom: 33px;
+
+    border-right: 1px solid $gray-236;
+  }
+}
+
+.main-nav__link-container--last {
+  @media (min-width: $desktop-container) {
+    padding-right: 0;
+    padding-left: 34px;
+
+    border-right: none;
+  }
+}
+
+.main-nav__link-text {
+  margin-left: 46px;
 
   font-style: normal;
   font-weight: 700;
@@ -16,5 +107,13 @@
   color: $black;
   text-transform: none;
 
-  border-bottom: 1px solid $gray-236;
+  @media (min-width: $tablet-container) {
+    margin-left: 0;
+
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-container) {
+    font-size: 17px;
+  }
 }

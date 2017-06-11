@@ -12,39 +12,15 @@
   text-transform: uppercase;
   text-align: center;
 
-  background-color: $white;
+  background-color: transparent;
   border: 2px solid $gray-68;
 
   cursor: pointer;
+}
 
-  &:hover {
-    color: $white;
+.btn--modal {
+  color: $white;
 
-    background-color: $gray-68;
-  }
-
-  &:active {
-    color: rgba($white, .3);
-
-    background-color: $gray-68;
-  }
-
-  &--modal {
-    color: $white;
-
-    background-color: $downy;
-    border-color: $downy;
-  }
-
-  &--modal:hover {
-    background-color: $fountain-blue;
-    border-color: $fountain-blue;
-  }
-
-  &--modal:active {
-    color: rgba($white, .3);
-
-    background-color: $fountain-blue;
-    border-color: $fountain-blue;
-  }
+  background-color: $downy;
+  border-color: $downy;
 }

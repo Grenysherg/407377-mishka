@@ -11,6 +11,10 @@
   color: $gray-68;
   text-transform: none;
   text-align: center;
+
+  @media (min-width: $tablet-container) {
+    font-size: 17px;
+  }
 }
 
 .form-offer__list {
@@ -21,4 +25,8 @@
 
 .form-offer__list-item {
   flex-shrink: 0;
+}
+
+.form-offer__submit {
+  width: 100%;
 }

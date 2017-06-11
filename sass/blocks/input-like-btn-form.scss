@@ -1,9 +1,11 @@
 .input-like-btn-form__input {
-  @include visually-hidden;
+  @include hidden-block();
 }
 
-.input-like-btn-form__custom-input {
+.input-like-btn-form__custom {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 82px;
   height: 52px;
 
@@ -11,14 +13,12 @@
 
   cursor: pointer;
 
-  &:hover {
-    border-color: rgba($gray-68, .3);
+  @media (min-width: $tablet-container) {
+    width: 112px;
   }
 }
 
 .input-like-btn-form__label {
-  margin: auto;
-
   font-style: normal;
   font-weight: 700;
   font-size: 17px;

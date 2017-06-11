@@ -1,4 +1,4 @@
-@mixin visually-hidden() {
+@mixin hidden-block() {
   position: absolute;
 
   width: 1px;
@@ -11,3 +11,12 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
+
+@mixin hidden-text() {
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+

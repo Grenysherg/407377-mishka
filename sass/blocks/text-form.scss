@@ -1,6 +1,11 @@
 .text-form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-container) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .text-form__label {
@@ -14,10 +19,17 @@
   text-transform: none;
 
   cursor: pointer;
+
+  @media (min-width: $tablet-container) {
+    padding-right: 30px;
+
+    font-size: 19px;
+  }
 }
 
 .text-form__input {
   flex-shrink: 0;
+  flex-grow: 1;
   height: 52px;
 
   font-style: normal;
@@ -29,36 +41,30 @@
   color: $gray-68;
   text-transform: none;
 
-  background-color: $white;
+  background-color: transparent;
   border: 0;
   border-bottom: 2px solid $black;
 
-  &:hover {
-    border-color: $downy;
+  @media (min-width: $tablet-container) {
+    padding-left: 18px;
   }
+}
 
-  &:focus {
-    border-color: $downy;
+.text-form__input::-webkit-input-placeholder {
+  color: rgba($gray-68, .3);
+}
 
-    outline: none;
-  }
+.text-form__input::-moz-placeholder {
+  color: rgba($gray-68, .3);
+}
 
-  &::-webkit-input-placeholder {
-    color: rgba($gray-68, .3);
-  }
+.text-form__input:-ms-input-placeholder {
+  color: rgba($gray-68, .3);
+}
 
-  &::-moz-placeholder {
-    color: rgba($gray-68, .3);
-  }
+.text-form__input--textarea {
+  height: 142px;
+  padding: 15px;
 
-  &:-ms-input-placeholder {
-    color: rgba($gray-68, .3);
-  }
-
-  &--textarea {
-    height: 142px;
-    padding: 15px;
-
-    border: 2px solid $gray-68;
-  }
+  border: 2px solid $gray-68;
 }

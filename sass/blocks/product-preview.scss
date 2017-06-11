@@ -1,11 +1,62 @@
-.product-preview__info {
-  padding: 27px 28px;
+.product-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 
-  border: 1px solid $gray-236;
+  @media (min-width: $tablet-container) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-container) {
+    flex-direction: column;
+  }
 }
 
 .product-preview__img-link {
-  display: block;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-container) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-container) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.product-preview__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 23px;
+  padding-right: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+
+  border: 1px solid $gray-236;
+
+  @media (min-width: $tablet-container) {
+    justify-content: space-between;
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-container) {
+    width: 316px;
+  }
+}
+
+.product-preview__info-top {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-container) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-container) {
+    margin-bottom: 13px;
+  }
 }
 
 .product-preview__title {
@@ -14,6 +65,8 @@
 }
 
 .product-preview__title-link {
+  display: block;
+
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -23,18 +76,17 @@
   color: $black;
   text-transform: none;
 
-  &:hover {
-    color: rgba($black, .6);
+  @media (min-width: $tablet-container) {
+    font-size: 20px;
   }
 
-  &:active {
-    color: rgba($black, .3);
+  @media (min-width: $desktop-container) {
+
   }
 }
 
 .product-preview__characters {
   margin: 0;
-  margin-bottom: 19px;
 
   font-style: normal;
   font-weight: 400;
@@ -44,13 +96,21 @@
   letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
+
+  @media (min-width: $tablet-container) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-container) {
+
+  }
 }
 
 .product-preview__buying {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 21px;
+  padding-top: 20px;
 
   border-top: 1px solid $gray-236;
 }
@@ -64,4 +124,22 @@
   letter-spacing: 0;
   color: $black;
   text-transform: none;
+
+  @media (min-width: $tablet-container) {
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-container) {
+
+  }
+}
+
+.product-preview__add-cart {
+  flex-shrink: 0;
+  width: 21px;
+  height: 18px;
+
+  background: transparent url("/img/icon-cart.svg") no-repeat;
+
+  @include hidden-text();
 }

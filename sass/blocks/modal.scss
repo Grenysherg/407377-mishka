@@ -1,0 +1,57 @@
+.modal {
+  background-color: $white;
+  border-top: 1px solid $gray-199;
+  border-bottom: 1px solid $gray-199;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-container) {
+    width: 567px;
+    margin: 0 auto;
+
+    border: 1px solid $gray-199;
+  }
+}
+
+.modal__container {
+  width: $mobile-container;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: $mobile-padding;
+  padding-bottom: 46px;
+  padding-left: $mobile-padding;
+
+  @media (min-width: $tablet-container) {
+    width: 564px;
+    margin: 0;
+    padding-top: 33px;
+    padding-right: 106px;
+    padding-bottom: 46px;
+    padding-left: 108px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 12px;
+  margin-right: 55px;
+  margin-left: 55px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-container) {
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
