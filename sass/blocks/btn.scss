@@ -1,6 +1,7 @@
 .btn {
   display: block;
   padding: 14px;
+  min-height: 52px;
 
   font-style: normal;
   font-weight: 700;
@@ -16,11 +17,22 @@
   border: 2px solid $gray-68;
 
   cursor: pointer;
+  outline: none;
 }
 
 .btn--modal {
+  line-height: 16px;
   color: $white;
 
   background-color: $downy;
   border-color: $downy;
+}
+
+.btn--modal:hover {
+  background-color: $fountain-blue;
+  border-color: $fountain-blue;
+}
+
+.btn--modal:active {
+  color: rgba($white, .3);
 }

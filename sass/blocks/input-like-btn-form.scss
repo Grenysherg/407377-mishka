@@ -13,9 +13,13 @@
 
   cursor: pointer;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     width: 112px;
   }
+}
+
+.input-like-btn-form__custom:hover {
+  border-color: rgba($gray-68, .3);
 }
 
 .input-like-btn-form__label {
@@ -27,4 +31,9 @@
   letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
+}
+
+.input-like-btn-form__input:checked ~ .input-like-btn-form__custom,
+.input-like-btn-form__custom:active {
+  border-color: $downy;
 }
