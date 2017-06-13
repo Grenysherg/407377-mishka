@@ -3,32 +3,32 @@
 }
 
 .advantages__container {
-  width: $mobile-container;
+  width: $mobile-width;
   margin: 0 auto;
   padding-top: 27px;
   padding-right: $mobile-padding;
-  padding-bottom: 27px;
+  padding-bottom: 55px;
   padding-left: $mobile-padding;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     width: $tablet-container;
-    padding-top: 47px;
+    padding-top: 49px;
     padding-right: $tablet-padding;
-    padding-bottom: 86px;
+    padding-bottom: 0;
     padding-left: $tablet-padding;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     width: $desktop-container;
     padding-top: 60px;
     padding-right: $big-padding;
-    padding-bottom: 90px;
     padding-left: $big-padding;
   }
 }
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 3px;
 
   font-style: normal;
   font-weight: 700;
@@ -39,12 +39,16 @@
   color: $black;
   text-transform: none;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -54,9 +58,14 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    max-height: 460px;
+    height: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    height: 534px;
   }
 }
 
@@ -65,22 +74,36 @@
 
   flex-shrink: 0;
   margin: 0;
-  padding-top: 84px;
+  padding-top: 83px;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     width: 270px;
-    padding-top: 108px;
+    margin-bottom: 20px;
+    padding-top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 91px;
+  }
+}
+
+.advantages__item:nth-of-type(3n) {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
   }
 }
 
 .advantages__item-icon {
   position: absolute;
-  top: 32px;
-  left: 5px;
+  top: 29px;
+  left: -5px;
 
-  @media (min-width: $tablet-container) {
-    top: 54px;
-    left: 7px;
+  fill: $downy;
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
   }
 }
 
@@ -94,7 +117,7 @@
   color: $black;
   text-transform: none;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
   }
