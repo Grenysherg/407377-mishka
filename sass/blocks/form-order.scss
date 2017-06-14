@@ -1,4 +1,4 @@
-.order-form {
+.form-order {
   padding-top: 22px;
   padding-bottom: 58px;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.order-form__container {
+.form-order__container {
   display: flex;
   flex-direction: column;
   width: $mobile-container;
@@ -39,7 +39,7 @@
   }
 }
 
-.order-form__container--desc {
+.form-order__container--desc {
   margin-bottom: 10px;
 
   @media (min-width: $tablet-container) {
@@ -47,7 +47,7 @@
   }
 }
 
-.order-form__container--section {
+.form-order__container--section {
   padding-top: 7px;
 
   @media (min-width: $tablet-container) {
@@ -62,29 +62,29 @@
   }
 }
 
-.order-form__container--choose-form {
+.form-order__container--choose-form {
   align-items: flex-start;
 }
 
-.order-form__container--padding-right {
+.form-order__container--padding-right {
   @media (min-width: $desktop-container) {
     padding-right: $desktop-padding;
   }
 }
 
-.order-form__container--padding-top {
+.form-order__container--padding-top {
   @media (min-width: $tablet-container) {
     padding-top: 0;
   }
 }
 
-.order-form__container--padding-bottom {
+.form-order__container--padding-bottom {
   @media (min-width: $tablet-container) {
     padding-bottom: 0;
   }
 }
 
-.order-form__desc {
+.form-order__desc {
   margin: 0;
 
   font-style: normal;
@@ -102,20 +102,20 @@
   }
 }
 
-.order-form__section {
+.form-order__section {
   margin: 0;
   padding: 0;
 
   border: 0;
 }
 
-.order-form__section--background-gray {
+.form-order__section--background-gray {
   @media (min-width: $tablet-container) {
     background-color: $gray-241;
   }
 }
 
-.order-form__section-title {
+.form-order__section-title {
   flex-shrink: 0;
   margin: 0;
   margin-bottom: 21px;
@@ -133,7 +133,7 @@
   }
 }
 
-.order-form__section-title::after {
+.form-order__section-title::after {
   content: "";
 
   position: relative;
@@ -149,21 +149,21 @@
   }
 }
 
-.order-form__section-title--text-form {
+.form-order__section-title--text-form {
   margin-bottom: 21px;
   @media (min-width: $tablet-container) {
     margin-bottom: 0;
   }
 }
 
-.order-form__section-title--alone-form {
+.form-order__section-title--alone-form {
   margin-bottom: 1px;
   @media (min-width: $tablet-container) {
     margin-bottom: 0;
   }
 }
 
-.order-form__section-title-text {
+.form-order__section-title-text {
   position: relative;
   z-index: 2;
 
@@ -191,12 +191,12 @@
   }
 }
 
-.order-form__section-list {
+.form-order__section-list {
   display: flex;
   flex-direction: column;
 }
 
-.order-form__section-list--checkbox {
+.form-order__section-list--checkbox {
   @media (min-width: $tablet-container) {
     flex-direction: row;
     justify-content: space-between;
@@ -208,11 +208,11 @@
   }
 }
 
-.order-form__section-list--text-form {
+.form-order__section-list--text-form {
   flex-grow: 1;
 }
 
-.order-form__section-item {
+.form-order__section-item {
   margin-bottom: 15px;
 
   @media (min-width: $tablet-container) {
@@ -220,8 +220,8 @@
   }
 }
 
-.order-form__section-item--checkbox,
-.order-form__section-item--text-form {
+.form-order__section-item--checkbox,
+.form-order__section-item--text-form {
   margin-bottom: 22px;
 
   @media (min-width: $tablet-container) {
@@ -229,13 +229,13 @@
   }
 }
 
-.order-form__section-item--checkbox {
+.form-order__section-item--checkbox {
   @media (min-width: $desktop-container) {
     margin-right: 8px;
   }
 }
 
-.order-form__legend {
+.form-order__legend {
   margin: 0;
   margin-bottom: 31px;
 
