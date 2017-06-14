@@ -38,13 +38,9 @@
     line-height: 24px;
     font-family: $open-sans;
     letter-spacing: 0;
-    color: $gray-210;
+    color: $black;
     text-transform: none;
   }
-}
-
-.product-menu__link[href] {
-  color: $black;
 }
 
 .product-menu__link[href]:hover {
