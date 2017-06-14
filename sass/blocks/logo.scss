@@ -6,6 +6,11 @@
   opacity: 0.3;
 }
 
+.logo--footer[href]:hover,
+.logo--footer[href]:active {
+  opacity: 1;
+}
+
 .logo__img {
   width: 86px;
   height: 35px;
@@ -19,4 +24,17 @@
     width: 149px;
     height: 72px;
   }
+}
+
+.logo__img--footer {
+  width: 102px;
+  height: 34px;
+}
+
+.logo--footer[href]:hover .logo__img--footer {
+  fill: $puerto-rico;
+}
+
+.logo--footer[href]:active .logo__img--footer {
+  fill: rgba($puerto-rico, .3);
 }
