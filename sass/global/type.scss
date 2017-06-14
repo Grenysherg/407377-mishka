@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  min-width: $mobile-container;
+  min-width: $mobile-width;
 }
 
 a {
@@ -22,7 +22,6 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
