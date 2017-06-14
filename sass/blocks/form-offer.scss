@@ -1,5 +1,9 @@
+.form-offer {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-offer__title {
-  display: block;
   margin-bottom: 23px;
 
   font-style: normal;
@@ -11,14 +15,26 @@
   color: $gray-68;
   text-transform: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+
+    font-size: 17px;
+  }
 }
 
 .form-offer__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 31px;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
 }
 
-.form-offer__list-item {
+.form-offer__item {
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+.form-offer__submit {
   flex-shrink: 0;
 }

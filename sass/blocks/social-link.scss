@@ -1,0 +1,19 @@
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  @include hidden-text();
+
+  &--inst {
+    background: transparent url("../../img/icon-insta.svg") no-repeat 50% 50%;
+  }
+
+  &--fb {
+    background: transparent url("../../img/icon-fb.svg") no-repeat 50% 50%;
+  }
+
+  &--tw {
+    background: transparent url("../../img/icon-twitter.svg") no-repeat 50% 50%;
+  }
+}

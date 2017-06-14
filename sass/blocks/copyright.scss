@@ -1,0 +1,28 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.copyright__text {
+  margin-right: 37px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $black;
+  text-transform: none;
+}
+
+.copyright__link {
+  flex-shrink: 0;
+  width: 27px;
+  height: 34px;
+
+  background: transparent url("../../img/logo-htmlacademy.svg") no-repeat;
+
+  @include hidden-text();
+}

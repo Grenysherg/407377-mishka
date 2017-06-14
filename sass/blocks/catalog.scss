@@ -1,18 +1,108 @@
 .catalog {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  background-color: $white;
+  background-color: $gray-249;
 }
 
-.catalog__title {
-  @include visually-hidden;
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-container) {
+    flex-direction: row;
+    margin: 0 auto;
+    width: $tablet-container;
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-container) {
+    width: $desktop-container;
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
+  }
 }
 
 .catalog__item {
-  margin-bottom: 29px;
+  flex-shrink: 0;
 
-  &:last-of-type {
-    margin-bottom: 0;
+  @media (min-width: $tablet-container) {
+    width: ($tablet-container - 2 * $tablet-padding) / 2;
   }
+
+  @media (min-width: $desktop-container) {
+    width: ($desktop-container - 2 * $desktop-padding) / 2;
+  }
+}
+
+.catalog__link {
+  display: block;
+
+  background-color: $downy;
+}
+
+.catalog__link--color-darker {
+  background-color: $fountain-blue;
+}
+
+.catalog__link-container {
+  display: flex;
+  justify-content: space-between;
+  width: $mobile-container;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-right: 36px;
+  padding-bottom: 15px;
+  padding-left: $mobile-padding;
+
+  @media (min-width: $tablet-container) {
+    width: auto;
+
+    padding-top: 29px;
+    padding-right: 36px;
+    padding-bottom: 26px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-container) {
+
+  }
+}
+
+.catalog__link-container--bigger {
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-container) {
+    padding-top: 29px;
+    padding-right: 34px;
+    padding-bottom: 28px;
+  }
+}
+
+.catalog__link-text {
+  width: 130px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: $open-sans;
+  letter-spacing: 0;
+  color: $white;
+  text-transform: none;
+
+  @media (min-width: $tablet-container) {
+    width: 140px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.catalog__link-icon {
+  flex-shrink: 0;
 }

@@ -1,7 +1,7 @@
 .btn {
   display: block;
-  width: 100%;
   padding: 14px;
+  min-height: 52px;
 
   font-style: normal;
   font-weight: 700;
@@ -13,39 +13,26 @@
   text-transform: uppercase;
   text-align: center;
 
-  background-color: $white;
+  background-color: transparent;
   border: 2px solid $gray-68;
 
   cursor: pointer;
+  outline: none;
+}
 
-  &:hover {
-    color: $white;
+.btn--modal {
+  line-height: 16px;
+  color: $white;
 
-    background-color: $gray-68;
-  }
+  background-color: $downy;
+  border-color: $downy;
+}
 
-  &:active {
-    color: rgba($white, .3);
+.btn--modal:hover {
+  background-color: $fountain-blue;
+  border-color: $fountain-blue;
+}
 
-    background-color: $gray-68;
-  }
-
-  &--modal {
-    color: $white;
-
-    background-color: $downy;
-    border-color: $downy;
-  }
-
-  &--modal:hover {
-    background-color: $fountain-blue;
-    border-color: $fountain-blue;
-  }
-
-  &--modal:active {
-    color: rgba($white, .3);
-
-    background-color: $fountain-blue;
-    border-color: $fountain-blue;
-  }
+.btn--modal:active {
+  color: rgba($white, .3);
 }

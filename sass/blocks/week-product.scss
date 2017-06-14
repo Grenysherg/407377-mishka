@@ -1,12 +1,68 @@
 .week-product {
-  padding-top: 27px;
-  padding-bottom: 35px;
-
   background-color: $white;
   border-bottom: 7px solid $gray-241;
+
+  @media (min-width: $tablet-container) {
+    border-bottom-width: 17px;
+  }
+
+  @media (min-width: $desktop-container) {
+    border-bottom-width: 23px;
+  }
+}
+
+.week-product__container {
+  display: flex;
+  flex-direction: column;
+  width: $mobile-container;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-right: $mobile-padding;
+  padding-bottom: 35px;
+  padding-left: $mobile-padding;
+
+  @media (min-width: $tablet-container) {
+    width: $tablet-container;
+    padding-top: 47px;
+    padding-right: $tablet-padding;
+    padding-bottom: 53px;
+    padding-left: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-container) {
+    position: relative;
+
+    width: $desktop-container;
+    padding-top: 231px;
+    padding-right: $desktop-padding;
+    padding-bottom: 72px;
+    padding-left: $desktop-padding;
+  }
 }
 
 .week-product__title {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-container) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-container) {
+    position: absolute;
+    top: 126px;
+
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.week-product__title-text {
   margin: 0;
   margin-bottom: 6px;
 
@@ -18,12 +74,23 @@
   letter-spacing: 0;
   color: $black;
   text-transform: none;
+
+  @media (min-width: $tablet-container) {
+    margin-bottom: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-container) {
+    order: 2;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .week-product__title-desc {
-  display: block;
-  margin-bottom: 22px;
-
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -32,6 +99,23 @@
   letter-spacing: 0;
   color: $downy;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-container) {
+    width: 167px;
+    padding-left: 67px;
+    padding-right: 27px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-container) {
+    order: 1;
+
+    width: 175px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
 }
 
 .week-product__desc {
@@ -46,15 +130,39 @@
   letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
+
+  @media (min-width: $tablet-container) {
+    width: 290px;
+    margin-bottom: 36px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-container) {
+    width: 292px;
+    margin-bottom: 48px;
+    margin-left: 175px;
+  }
 }
 
 .week-product__characters {
+  flex-shrink: 0;
   margin-bottom: 28px;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-container) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-container) {
+    margin-bottom: 110px;
+    margin-left: 175px;
+  }
 }
 
-.week-product__characters-item-name,
-.week-product__characters-item-value {
+.week-product__characters-name,
+.week-product__characters-value {
   padding-top: 9px;
   padding-bottom: 10px;
 
@@ -70,20 +178,20 @@
   border-bottom: 1px solid $gray-236;
 }
 
-.week-product__characters-item-name {
+.week-product__characters-name {
   width: 97px;
 }
 
-.week-product__characters-item-value {
+.week-product__characters-value {
   width: 163px;
-}
 
-.week-product__img {
-  margin-bottom: 20px;
+  @media (min-width: $tablet-container) {
+    width: 195px;
+  }
 }
 
 .week-product__price {
-  display: block;
+  align-self: center;
   margin-bottom: 26px;
 
   font-style: normal;
@@ -94,5 +202,52 @@
   letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
-  text-align: center;
+
+  @media (min-width: $tablet-container) {
+    align-self: stretch;
+    width: 290px;
+    margin-bottom: 34px;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-container) {
+    width: 292px;
+    margin-bottom: 34px;
+    margin-left: 175px;
+  }
+}
+
+.week-product__btn {
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-container) {
+    width: 290px;
+  }
+
+  @media (min-width: $desktop-container) {
+    width: 292px;
+    margin-left: 175px;
+  }
+}
+
+.week-product__img {
+  flex-shrink: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-container) {
+    align-self: flex-end;
+    order: 1;
+    width: 333px;
+    height: 404px;
+    margin-top: -404px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-container) {
+    width: 525px;
+    height: 636px;
+    margin-top: -636px;
+  }
 }
