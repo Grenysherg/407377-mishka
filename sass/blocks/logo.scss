@@ -1,0 +1,22 @@
+.logo[href]:hover {
+  opacity: 0.6;
+}
+
+.logo[href]:active {
+  opacity: 0.3;
+}
+
+.logo__img {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}

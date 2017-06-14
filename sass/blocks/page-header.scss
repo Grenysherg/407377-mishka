@@ -1,4 +1,6 @@
 .page-header {
+  margin-top: 20px;
+
   background-color: $white;
   border-top: 1px solid $gray-236;
   border-bottom: 1px solid $gray-236;
@@ -7,24 +9,25 @@
 .page-header__container {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 21px;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     position: relative;
 
     flex-direction: row;
     justify-content: space-between;
-    width: $tablet-container;
+    width: $tablet-width;
     margin: 0 auto;
-    padding-top: 0;
+    padding-top: 2px;
     padding-right: $tablet-padding;
     padding-left: $tablet-padding;
   }
 
-  @media (min-width: $desktop-container) {
-    width: $desktop-container;
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding-top: 0;
     padding-right: $desktop-padding;
-    padding-left: $desktop-padding;
+    padding-left: 16px;
   }
 }
 
@@ -32,68 +35,73 @@
   flex-shrink: 0;
   align-self: center;
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     order: 2;
+    padding-top: 4px;
+    padding-right: 58px;
   }
 }
 
 .page-header__nav {
   flex-shrink: 0;
-  margin-top: 23px;
+  margin-top: 18px;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     margin-top: 0;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     order: 1;
   }
 }
 
 .page-header__menu {
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 100%;
-    left: $tablet-padding;
+    left: 40px;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     position: static;
+
+    flex-shrink: 0;
   }
 }
 
 .page-header__user-menu {
   flex-shrink: 0;
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     order: 3;
   }
 }
 
 .page-header__product-menu {
-  @media (max-width: $desktop-container) {
+  @media (max-width: $desktop-width) {
     @include hidden-block();
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: 100%;
-    left: $desktop-padding;
+    left: 40px;
 
     margin-top: 10px;
   }
 }
 
 .page-header__advantage {
-  @media (max-width: $tablet-container) {
+  @media (max-width: $tablet-width) {
     @include hidden-block();
   }
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 100%;
     right: $tablet-padding;
 
+    max-width: 350px;
     margin-top: 18px;
 
     font-style: normal;
@@ -106,7 +114,7 @@
     text-transform: none;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     right: $desktop-padding;
   }
 }
