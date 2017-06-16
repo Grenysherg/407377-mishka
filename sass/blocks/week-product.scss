@@ -1,42 +1,63 @@
 .week-product {
-  background-color: $white;
-  border-bottom: 7px solid $gray-241;
+  position: relative;
 
-  @media (min-width: $tablet-container) {
-    border-bottom-width: 17px;
+  background-color: $white;
+}
+
+.week-product::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 7px;
+
+  background-color: transparent;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 7px;
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+
+    background-size: auto 17px;
   }
 
-  @media (min-width: $desktop-container) {
-    border-bottom-width: 23px;
+  @media (min-width: $desktop-width) {
+    height: 23px;
+
+    background-size: auto 23px;
   }
 }
 
 .week-product__container {
   display: flex;
   flex-direction: column;
-  width: $mobile-container;
+  width: $mobile-width;
   margin: 0 auto;
   padding-top: 27px;
   padding-right: $mobile-padding;
-  padding-bottom: 35px;
+  padding-bottom: 42px;
   padding-left: $mobile-padding;
 
-  @media (min-width: $tablet-container) {
-    width: $tablet-container;
-    padding-top: 47px;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding-top: 33px;
     padding-right: $tablet-padding;
-    padding-bottom: 53px;
+    padding-bottom: 65px;
     padding-left: $tablet-padding;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     position: relative;
 
-    width: $desktop-container;
-    padding-top: 231px;
+    width: $desktop-width;
+    padding-top: 210px;
     padding-right: $desktop-padding;
-    padding-bottom: 72px;
-    padding-left: $desktop-padding;
+    padding-bottom: 92px;
+    padding-left: $big-padding;
   }
 }
 
@@ -46,16 +67,17 @@
   flex-direction: column;
   margin-bottom: 22px;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 49px;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     position: absolute;
-    top: 126px;
+    top: 105px;
+    left: 47px;
 
     justify-content: flex-start;
     margin-bottom: 0;
@@ -75,14 +97,14 @@
   color: $black;
   text-transform: none;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     order: 2;
 
     font-size: 53px;
@@ -100,7 +122,7 @@
   color: $downy;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     width: 167px;
     padding-left: 67px;
     padding-right: 27px;
@@ -109,7 +131,7 @@
     text-align: center;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     order: 1;
 
     width: 175px;
@@ -131,7 +153,7 @@
   color: $gray-68;
   text-transform: none;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     width: 290px;
     margin-bottom: 36px;
 
@@ -139,10 +161,9 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     width: 292px;
     margin-bottom: 48px;
-    margin-left: 175px;
   }
 }
 
@@ -151,13 +172,12 @@
   margin-bottom: 28px;
   border-collapse: collapse;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 56px;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 110px;
-    margin-left: 175px;
   }
 }
 
@@ -185,7 +205,7 @@
 .week-product__characters-value {
   width: 163px;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     width: 195px;
   }
 }
@@ -203,7 +223,7 @@
   color: $gray-68;
   text-transform: none;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     align-self: stretch;
     width: 290px;
     margin-bottom: 34px;
@@ -212,42 +232,36 @@
     text-align: center;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     width: 292px;
     margin-bottom: 34px;
-    margin-left: 175px;
   }
 }
 
 .week-product__btn {
   flex-shrink: 0;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     width: 290px;
   }
 
-  @media (min-width: $desktop-container) {
+  @media (min-width: $desktop-width) {
     width: 292px;
-    margin-left: 175px;
   }
 }
 
 .week-product__img {
   flex-shrink: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     align-self: flex-end;
     order: 1;
-    width: 333px;
-    height: 404px;
     margin-top: -404px;
     margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-container) {
-    width: 525px;
-    height: 636px;
+  @media (min-width: $desktop-width) {
     margin-top: -636px;
   }
 }

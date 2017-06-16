@@ -20,6 +20,18 @@
   outline: none;
 }
 
+.btn:hover {
+  color: $white;
+
+  background-color: $gray-68;
+}
+
+.btn:active {
+  color: rgba($white, .3);
+
+  background-color: $gray-68;
+}
+
 .btn--modal {
   line-height: 16px;
   color: $white;
@@ -35,4 +47,7 @@
 
 .btn--modal:active {
   color: rgba($white, .3);
+
+  background-color: $fountain-blue;
+  border-color: $fountain-blue;
 }

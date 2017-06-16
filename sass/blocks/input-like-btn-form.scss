@@ -36,4 +36,6 @@
 .input-like-btn-form__input:checked ~ .input-like-btn-form__custom,
 .input-like-btn-form__custom:active {
   border-color: $downy;
+
+  cursor: auto;
 }
