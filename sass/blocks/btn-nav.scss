@@ -1,22 +1,30 @@
 .btn-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 52px;
 
   background-color: transparent;
   border: 1px solid $gray-236;
 
   cursor: pointer;
-
-  @include hidden-text();
+  outline: none;
 
   @media (min-width: $tablet-container) {
     border: none;
   }
 }
 
-.btn-nav--prev {
-  background: transparent url("../../img/icon-left-arrow.svg") no-repeat 50% 50%;
+.btn-nav__icon {
+  flex-shrink: 0;
+
+  fill: $black;
 }
 
-.btn-nav--next {
-  background: transparent url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
+.btn-nav:hover .btn-nav__icon {
+  fill: rgba($black, .6);
+}
+
+.btn-nav:active .btn-nav__icon {
+  fill: rgba($black, .3);
 }
