@@ -8,5 +8,17 @@
   background-repeat: no-repeat;
   border: 0;
 
+  cursor: pointer;
+  outline: none;
+
   @include hidden-text();
+}
+
+.video-btn:hover {
+  transform: scale(1.2);
+}
+
+.video-btn:active {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
