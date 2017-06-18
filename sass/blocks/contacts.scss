@@ -40,7 +40,9 @@
     width: 47px;
     height: 81px;
 
-    background: transparent url("../../img/icon-flag.svg") no-repeat;
+    background-color: transparent;
+    background-image: url("/img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,10 +142,6 @@
   @media (min-width: $tablet-width) {
     width: 257px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .contacts__item-link {
@@ -209,7 +207,7 @@
   height: 100px;
 
   background-color: transparent;
-  background-image: url("../../img/icon-map-pin.svg");
+  background-image: url("/img/icon-map-pin.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {

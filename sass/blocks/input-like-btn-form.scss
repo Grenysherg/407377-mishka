@@ -9,7 +9,7 @@
   width: 82px;
   height: 52px;
 
-  border: 2px solid rgba($gray-68, .1);
+  border: 2px solid rgba($gray-68, 0.1);
 
   cursor: pointer;
 
@@ -19,7 +19,7 @@
 }
 
 .input-like-btn-form__custom:hover {
-  border-color: rgba($gray-68, .3);
+  border-color: rgba($gray-68, 0.3);
 }
 
 .input-like-btn-form__label {

@@ -16,7 +16,7 @@
     height: 23px;
 
     background-color: transparent;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("/img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 23px;
   }
@@ -135,9 +135,9 @@
 }
 
 .catalog__link:active .catalog__link-text {
-  color: rgba($white, .3);
+  color: rgba($white, 0.3);
 }
 
 .catalog__link:active .catalog__link-icon {
-  fill: rgba($keppel, .3);
+  fill: rgba($keppel, 0.3);
 }
