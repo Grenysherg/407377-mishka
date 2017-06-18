@@ -17,7 +17,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding-top: 91px;
+    padding-top: 72px;
     padding-right: $tablet-padding;
     padding-left: $tablet-padding;
   }
@@ -27,7 +27,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: $desktop-width;
-    padding-top: 146px;
+    padding-top: 109px;
     padding-right: $desktop-padding;
     padding-bottom: 57px;
     padding-left: $desktop-padding;
@@ -40,6 +40,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.main-catalog__item:last-of-type {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
