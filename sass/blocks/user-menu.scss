@@ -116,13 +116,13 @@
 }
 
 .user-menu__link[href]:active .user-menu__link-icon {
-  fill: rgba($downy, .3);
+  fill: rgba($downy, 0.3);
 }
 
 .user-menu__link[href]:hover .user-menu__link-text {
-  color: rgba($black, .6);
+  color: rgba($black, 0.6);
 }
 
 .user-menu__link[href]:active .user-menu__link-text {
-  color: rgba($black, .3);
+  color: rgba($black, 0.3);
 }

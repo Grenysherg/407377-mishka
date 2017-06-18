@@ -27,7 +27,7 @@
 }
 
 .btn:active {
-  color: rgba($white, .3);
+  color: rgba($white, 0.3);
 
   background-color: $gray-68;
 }
@@ -46,7 +46,7 @@
 }
 
 .btn--modal:active {
-  color: rgba($white, .3);
+  color: rgba($white, 0.3);
 
   background-color: $fountain-blue;
   border-color: $fountain-blue;

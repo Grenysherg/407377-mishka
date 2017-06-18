@@ -2,6 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
 }
 
 .copyright__text {
@@ -32,5 +40,5 @@
 }
 
 .copyright__link:active .copyright__link-icon {
-  fill: rgba($puerto-rico, .3);
+  fill: rgba($puerto-rico, 0.3);
 }

@@ -1,8 +1,10 @@
 .text-form {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: baseline;
   }
@@ -20,7 +22,7 @@
 
   cursor: pointer;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     padding-right: 30px;
 
     font-size: 19px;
@@ -31,6 +33,7 @@
   flex-shrink: 0;
   flex-grow: 1;
   height: 52px;
+  padding-right: 60px;
 
   font-style: normal;
   font-weight: 400;
@@ -45,21 +48,59 @@
   border: 0;
   border-bottom: 2px solid $black;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     padding-left: 18px;
   }
 }
 
+.text-form__input:hover {
+  border-color: $downy;
+}
+
+.text-form__input:focus {
+  border-color: $downy;
+
+  outline: none;
+}
+
+.text-form__input--smaller {
+  height: 51px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
+.text-form__input--bigger {
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
 .text-form__input::-webkit-input-placeholder {
-  color: rgba($gray-68, .3);
+  color: rgba($gray-68, 0.3);
+}
+
+.text-form__input:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
 .text-form__input::-moz-placeholder {
-  color: rgba($gray-68, .3);
+  color: rgba($gray-68, 0.3);
+}
+
+.text-form__input:focus::-moz-placeholder {
+  color: transparent;
 }
 
 .text-form__input:-ms-input-placeholder {
-  color: rgba($gray-68, .3);
+  color: rgba($gray-68, 0.3);
+}
+
+.text-form__input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 .text-form__input--textarea {
@@ -67,4 +108,28 @@
   padding: 15px;
 
   border: 2px solid $gray-68;
+}
+
+.text-form__icon {
+  position: absolute;
+  top: 11px;
+  right: 6px;
+
+  fill: $gray-193;
+
+  @media (min-width: $tablet-width) {
+    right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 7px;
+  }
+}
+
+.text-form__input:hover ~ .text-form__icon {
+  fill: $downy;
+}
+
+.text-form__input:focus ~ .text-form__icon {
+  fill: $downy;
 }

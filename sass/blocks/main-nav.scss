@@ -6,7 +6,9 @@
   width: 21px;
   height: 20px;
 
-  background: transparent url("../../img/icon-menu-close.svg") no-repeat;
+  background-color: transparent;
+  background-image: url("/img/icon-menu-close.svg");
+  background-repeat: no-repeat;
   border: 0;
 
   cursor: pointer;
@@ -94,9 +96,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 30px;
+    padding-top: 29px;
     padding-right: 47px;
-    padding-bottom: 33px;
+    padding-bottom: 34px;
     padding-left: 34px;
   }
 }
@@ -123,9 +125,9 @@
 }
 
 .main-nav__link[href]:hover .main-nav__link-text {
-  color: rgba($black, .6);
+  color: rgba($black, 0.6);
 }
 
 .main-nav__link[href]:active .main-nav__link-text {
-  color: rgba($black, .3);
+  color: rgba($black, 0.3);
 }

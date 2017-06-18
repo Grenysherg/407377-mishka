@@ -45,12 +45,12 @@
 
 .product-menu__link[href]:hover {
   @media (min-width: $desktop-width) {
-    color: rgba($black, .6);
+    color: rgba($black, 0.6);
   }
 }
 
 .product-menu__link[href]:active {
   @media (min-width: $desktop-width) {
-    color: rgba($black, .3);
+    color: rgba($black, 0.3);
   }
 }
