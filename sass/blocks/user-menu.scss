@@ -50,6 +50,8 @@
   padding-bottom: 27px;
   padding-left: $mobile-padding;
 
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
     width: auto;
     margin: 0;

@@ -5,6 +5,8 @@
 .social-link__icon {
   width: 40px;
   height: 40px;
+
+  pointer-events: none;
 }
 
 .social-link:hover .social-link__icon {

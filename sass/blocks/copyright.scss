@@ -33,6 +33,8 @@
 
 .copyright__link-icon {
   fill: $downy;
+
+  pointer-events: none;
 }
 
 .copyright__link:hover .copyright__link-icon {

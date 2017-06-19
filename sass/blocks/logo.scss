@@ -15,6 +15,8 @@
   width: 86px;
   height: 35px;
 
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
     width: 113px;
     height: 46px;

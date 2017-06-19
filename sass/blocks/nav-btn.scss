@@ -10,7 +10,7 @@
   cursor: pointer;
   outline: none;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     border: none;
   }
 }

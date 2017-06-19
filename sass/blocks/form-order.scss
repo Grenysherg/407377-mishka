@@ -145,11 +145,12 @@
   @media (min-width: $tablet-width) {
     width: 167px;
     margin-bottom: 0;
-    padding-top: 10px;
+    padding-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
     width: 174px;
+    padding-top: 19px;
     padding-left: 63px;
   }
 }
@@ -199,6 +200,7 @@
   z-index: 2;
 
   display: inline-block;
+  padding-top: 7px;
   padding-right: 27px;
 
   font-style: normal;
@@ -209,6 +211,7 @@
   letter-spacing: 0;
   color: $downy;
   text-transform: uppercase;
+  vertical-align: top;
 
   background-color: $white;
 
@@ -216,6 +219,7 @@
     position: static;
     z-index: 0;
 
+    padding-top: 0;
     padding-right: 0;
 
     background-color: transparent;

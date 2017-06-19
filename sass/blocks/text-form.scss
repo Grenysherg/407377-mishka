@@ -30,6 +30,8 @@
 }
 
 .text-form__input {
+  z-index: 1;
+
   flex-shrink: 0;
   flex-grow: 1;
   height: 52px;
@@ -53,6 +55,7 @@
   }
 }
 
+.text-form__label:hover ~ .text-form__input,
 .text-form__input:hover {
   border-color: $downy;
 }

@@ -155,6 +155,7 @@
   letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
+  vertical-align: top;
 
   border-bottom: 1px solid $puerto-rico;
 
@@ -210,6 +211,8 @@
   background-image: url("/img/icon-map-pin.svg");
   background-repeat: no-repeat;
 
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
     left: 348px;
   }
@@ -217,6 +220,10 @@
   @media (min-width: $desktop-width) {
     left: 236px;
   }
+}
+
+.contacts__location-img {
+  pointer-events: none;
 }
 
 .contacts__write-company {

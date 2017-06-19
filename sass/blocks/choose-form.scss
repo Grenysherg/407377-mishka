@@ -18,6 +18,8 @@
   border: 2px solid $gray-68;
   border-radius: 50%;
 
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
     width: 52px;
     height: 52px;
@@ -48,6 +50,8 @@
   letter-spacing: 0;
   color: $black;
   text-transform: none;
+
+  pointer-events: none;
 
   @media (min-width: $tablet-width) {
     width: 270px;
