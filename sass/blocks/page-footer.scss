@@ -30,14 +30,16 @@
   }
 }
 
-.page-footer__container::after {
-  @media (max-width: $tablet-width) {
-    content: "";
+.page-footer__line {
+  content: "";
 
-    height: 1px;
-    margin-bottom: 19px;
+  height: 1px;
+  margin-bottom: 19px;
 
-    background-color: $gray-229;
+  background-color: $gray-229;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
