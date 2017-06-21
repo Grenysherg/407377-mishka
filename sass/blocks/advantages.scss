@@ -152,6 +152,7 @@
   letter-spacing: 0;
   color: $black;
   text-transform: none;
+  vertical-align: top;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

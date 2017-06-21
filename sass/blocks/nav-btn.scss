@@ -1,0 +1,30 @@
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+
+  background-color: transparent;
+  border: 1px solid $gray-236;
+
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.nav-btn__icon {
+  flex-shrink: 0;
+
+  fill: $black;
+}
+
+.nav-btn:hover .nav-btn__icon {
+  fill: rgba($black, 0.6);
+}
+
+.nav-btn:active .nav-btn__icon {
+  fill: rgba($black, 0.3);
+}

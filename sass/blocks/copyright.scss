@@ -2,6 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
 }
 
 .copyright__text {
@@ -21,8 +29,18 @@
   flex-shrink: 0;
   width: 27px;
   height: 34px;
+}
 
-  background: transparent url("../../img/logo-htmlacademy.svg") no-repeat;
+.copyright__link-icon {
+  fill: $downy;
 
-  @include hidden-text();
+  pointer-events: none;
+}
+
+.copyright__link:hover .copyright__link-icon {
+  fill: $puerto-rico;
+}
+
+.copyright__link:active .copyright__link-icon {
+  fill: rgba($puerto-rico, 0.3);
 }

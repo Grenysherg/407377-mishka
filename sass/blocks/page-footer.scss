@@ -5,49 +5,50 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  width: $mobile-container;
+  width: $mobile-width;
   margin: 0 auto;
   padding-top: 20px;
   padding-right: $mobile-padding;
   padding-bottom: 25px;
   padding-left: $mobile-padding;
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: $tablet-container;
+    align-items: center;
+    width: $tablet-width;
     padding-top: 51px;
     padding-right: $tablet-padding;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
     padding-left: $tablet-padding;
   }
 
-  @media (min-width: $desktop-container) {
-    width: $desktop-container;
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
     padding-right: $desktop-padding;
     padding-left: $desktop-padding;
   }
 }
 
 .page-footer__container::after {
-  @media (max-width: $tablet-container) {
+  @media (max-width: $tablet-width) {
     content: "";
 
     height: 1px;
-    margin: 20px 0;
+    margin-bottom: 19px;
 
     background-color: $gray-229;
   }
 }
 
 .page-footer__logo {
-  @media (max-width: $tablet-container) {
+  @media (max-width: $tablet-width) {
     @include hidden-block();
   }
 
-  @media (min-width: $tablet-container) {
+  @media (min-width: $tablet-width) {
     flex-shrink: 0;
-    align-self: center;
+    padding-bottom: 6px;
   }
 }
 
@@ -55,23 +56,37 @@
   flex-shrink: 0;
   align-self: center;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 160px;
   margin: 0;
+  margin-bottom: 6px;
   padding: 0;
 
   list-style: none;
 
-  @media (min-width: $tablet-container) {
-    margin-left: 75px;
+  @media (min-width: $tablet-width) {
+    max-width: none;
+    margin-bottom: 0;
+    margin-left: 98px;
   }
 }
 
 .page-footer__socials-item {
   flex-shrink: 0;
   margin-right: 18px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
-.page-footer__socials-item:last-of-type {
+.page-footer__socials-item:nth-of-type(3n) {
   margin-right: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }
 
 .page-footer__copyright {
