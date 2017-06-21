@@ -31,6 +31,8 @@
   letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
+
+  pointer-events: none;
 }
 
 .input-like-btn-form__input:checked ~ .input-like-btn-form__custom,

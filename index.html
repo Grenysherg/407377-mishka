@@ -107,10 +107,10 @@
             <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
           </picture>
         </a>
+        <div class="page-header__wrapper page-header__wrapper--closed">
+          <button class="page-header__toggle" type="button">Открыть меню</button>
+        </div>
         <nav class="main-nav page-header__nav">
-          <div class="main-nav__container">
-            <button class="main-nav__toggle" type="button">Открыть главное меню</button>
-          </div>
           <ul class="page-header__menu main-nav__menu">
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">
@@ -197,36 +197,30 @@
             <h2 class="week-product__title-text">Вязаные корзинки</h2>
             <b class="week-product__title-desc">Товар недели</b>
           </div>
-          <div class="week-product__wrapper">
-            <div class="week-product__text">
-              <p class="week-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
-              <table class="week-product__characters">
-                <tbody>
-                  <tr class="week-product__characters-item">
-                    <td class="week-product__characters-name">Цвет:</td>
-                    <td class="week-product__characters-value">«Тиффани»/серый</td>
-                  </tr>
-                  <tr class="week-product__characters-item">
-                    <td class="week-product__characters-name">Диаметр:</td>
-                    <td class="week-product__characters-value">25 см</td>
-                  </tr>
-                  <tr class="week-product__characters-item">
-                    <td class="week-product__characters-name">Высота:</td>
-                    <td class="week-product__characters-value">15 см</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="week-product__buying">
-                <b class="week-product__price">Цена: 990 руб.</b>
-                <a class="btn week-product__order" href="add-cart.html">Заказать</a>
-              </div>
-            </div>
-            <picture class="week-product__img">
-              <source media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.jpg, /img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg, /img/triple-set-tablet@2x.jpg 2x">
-              <img src="/img/triple-set-mobile@1x.jpg" srcset="/img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
-            </picture>
-          </div>
+          <p class="week-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+          <table class="week-product__characters">
+            <tbody>
+              <tr class="week-product__characters-item">
+                <td class="week-product__characters-name">Цвет:</td>
+                <td class="week-product__characters-value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="week-product__characters-item">
+                <td class="week-product__characters-name">Диаметр:</td>
+                <td class="week-product__characters-value">25 см</td>
+              </tr>
+              <tr class="week-product__characters-item">
+                <td class="week-product__characters-name">Высота:</td>
+                <td class="week-product__characters-value">15 см</td>
+              </tr>
+            </tbody>
+          </table>
+          <picture class="week-product__img">
+            <source media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.jpg, /img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg, /img/triple-set-tablet@2x.jpg 2x">
+            <img src="/img/triple-set-mobile@1x.jpg" srcset="/img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          </picture>
+          <b class="week-product__price">Цена: 990 руб.</b>
+          <a class="btn week-product__order" href="add-cart.html">Заказать</a>
         </div>
       </article>
       <section class="advantages">
@@ -275,18 +269,23 @@
       <section class="reviews">
         <div class="reviews__container">
           <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="reviews__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
-          <cite class="reviews__author">
+          <blockquote class="reviews__item reviews__item--current">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+          <cite class="reviews__author reviews__author--current">
             <b class="reviews__author-name">Анастасия Красильникова</b>
             <b class="reviews__author-email">@misssssiskras</b>
           </cite>
+          <blockquote class="reviews__item">Я молодой папа, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстапапочек. В отчаянии, я накупил аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+          <cite class="reviews__author">
+            <b class="reviews__author-name">Анатолий Красильников</b>
+            <b class="reviews__author-email">@misssssterkras</b>
+          </cite>
           <div class="reviews__nav">
-            <button class="nav-btn reviews__nav-item" type="button" aria-label="Предыдущий отзыв">
+            <button class="nav-btn reviews__nav-item js-prev-button" type="button" aria-label="Предыдущий отзыв">
               <svg class="nav-btn__icon" width="50" height="26">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow" x="0" y="0" width="50" height="26.003"></use>
               </svg>
             </button>
-            <button class="nav-btn reviews__nav-item" type="button" aria-label="Следующий отзыв">
+            <button class="nav-btn reviews__nav-item js-next-button" type="button" aria-label="Следующий отзыв">
               <svg class="nav-btn__icon" width="50" height="26">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow" x="0" y="0" width="50" height="26.003"></use>
               </svg>
@@ -310,13 +309,16 @@
               <dd class="contacts__item-value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</dd>
             </dl>
           </div>
-          <a class="contacts__location" href="location.html">
-            <picture class="contacts__location-img">
-              <source media="(min-width: 1150px)" srcset="/img/map-desktop@1x.jpg, /img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="/img/map-tablet@1x.jpg, /img/map-tablet@2x.jpg 2x">
-              <img src="/img/map-mobile@1x.jpg" srcset="/img/map-mobile@2x.jpg 2x" alt="Расположение">
-            </picture>
-          </a>
+          <div class="contacts__location">
+            <div class="contacts__location-map"></div>
+            <a class="contacts__location-link" href="location.html">
+              <picture class="contacts__location-img">
+                <source media="(min-width: 1150px)" srcset="/img/map-desktop@1x.jpg, /img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="/img/map-tablet@1x.jpg, /img/map-tablet@2x.jpg 2x">
+                <img src="/img/map-mobile@1x.jpg" srcset="/img/map-mobile@2x.jpg 2x" alt="Расположение">
+              </picture>
+            </a>
+          </div>
           <a class="btn contacts__write-company" href="write-company.html">Напишите нам</a>
         </div>
       </section>
@@ -362,34 +364,41 @@
       </div>
     </footer>
     <div class="modal">
+      <div class="modal__overlay"></div>
       <div class="modal__container">
-        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-        <form class="form-offer modal__offer" action="https://echo.htmlacademy.ru/" method="post">
-          <b class="form-offer__title">Выберите размер:</b>
-          <div class="form-offer__list">
-            <label class="input-like-btn-form form-offer__item">
-              <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
-              <span class="input-like-btn-form__custom">
-                <b class="input-like-btn-form__label">S</b>
-              </span>
-            </label>
-            <label class="input-like-btn-form form-offer__item">
-              <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
-              <span class="input-like-btn-form__custom">
-                <b class="input-like-btn-form__label">M</b>
-              </span>
-            </label>
-            <label class="input-like-btn-form form-offer__item">
-              <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
-              <span class="input-like-btn-form__custom">
-                <b class="input-like-btn-form__label">L</b>
-              </span>
-            </label>
+        <div class="modal__window">
+          <div class="modal__window-container">
+            <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+            <form class="form-offer modal__offer" action="https://echo.htmlacademy.ru/" method="post">
+              <b class="form-offer__title">Выберите размер:</b>
+              <div class="form-offer__list">
+                <label class="input-like-btn-form form-offer__item">
+                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
+                  <span class="input-like-btn-form__custom">
+                    <b class="input-like-btn-form__label">S</b>
+                  </span>
+                </label>
+                <label class="input-like-btn-form form-offer__item">
+                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
+                  <span class="input-like-btn-form__custom">
+                    <b class="input-like-btn-form__label">M</b>
+                  </span>
+                </label>
+                <label class="input-like-btn-form form-offer__item">
+                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
+                  <span class="input-like-btn-form__custom">
+                    <b class="input-like-btn-form__label">L</b>
+                  </span>
+                </label>
+              </div>
+              <button class="btn btn--modal form-offer__submit" type="submit">Добавить</button>
+            </form>
           </div>
-          <button class="btn btn--modal form-offer__submit" type="submit">Добавить</button>
-        </form>
+        </div>
       </div>
     </div>
+    <script src="/js/app.js"></script>
     <script src="/js/picturefill.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
   </body>
 </html>

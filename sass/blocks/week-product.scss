@@ -39,14 +39,14 @@
   margin: 0 auto;
   padding-top: 27px;
   padding-right: $mobile-padding;
-  padding-bottom: 144px;
+  padding-bottom: 42px;
   padding-left: $mobile-padding;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding-top: 33px;
     padding-right: $tablet-padding;
-    padding-bottom: 65px;
+    padding-bottom: 69px;
     padding-left: $tablet-padding;
   }
 
@@ -54,9 +54,9 @@
     position: relative;
 
     width: $desktop-width;
-    padding-top: 52px;
+    padding-top: 210px;
     padding-right: $desktop-padding;
-    padding-bottom: 92px;
+    padding-bottom: 96px;
     padding-left: $big-padding;
   }
 }
@@ -78,7 +78,6 @@
     position: absolute;
     top: 105px;
     left: 47px;
-    z-index: 1;
 
     justify-content: flex-start;
     margin-bottom: 0;
@@ -138,27 +137,6 @@
     width: 175px;
     padding-left: 20px;
     padding-right: 30px;
-  }
-}
-
-.week-product__wrapper {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.week-product__text {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    margin-top: 158px;
   }
 }
 
@@ -232,24 +210,6 @@
   }
 }
 
-.week-product__buying {
-  position: absolute;
-  top: 100%;
-  left: 0;
-
-  display: flex;
-  flex-direction: column;
-  width: $mobile-width - $mobile-padding;
-  padding-right: $mobile-padding;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-
-    width: auto;
-    padding-right: 0;
-  }
-}
-
 .week-product__price {
   align-self: center;
   margin-bottom: 26px;
@@ -292,14 +252,22 @@
 
 .week-product__img {
   flex-shrink: 0;
-  margin-bottom: 20px;
+  width: 260px;
+  height: 315px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 8px;
+    align-self: flex-end;
+    order: 1;
+    width: 333px;
+    height: 404px;
+    margin-top: -404px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    width: 525px;
+    height: 636px;
+    margin-top: -636px;
   }
 }

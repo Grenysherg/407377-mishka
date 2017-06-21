@@ -1,7 +1,13 @@
 .page-header {
+  position: relative;
+
   background-color: $white;
   border-top: 1px solid $gray-236;
   border-bottom: 1px solid $gray-236;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .page-header__container {
@@ -40,11 +46,46 @@
   }
 }
 
+.page-header__wrapper {
+  position: relative;
+
+  display: none;
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: -33px;
+  right: $mobile-padding;
+
+  width: 21px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("/img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  border: 0;
+
+  cursor: pointer;
+  outline: none;
+
+  @include hidden-text();
+}
+
 .page-header__nav {
+  position: relative;
+
   flex-shrink: 0;
   margin-top: 18px;
 
   @media (min-width: $tablet-width) {
+    position: static;
+
     margin-top: 0;
   }
 
@@ -117,5 +158,59 @@
 
   @media (min-width: $desktop-width) {
     right: $desktop-padding;
+  }
+}
+
+.page-header__wrapper--js {
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header__wrapper--js.page-header__wrapper--closed .page-header__toggle {
+  top: -29px;
+
+  width: 20px;
+  height: 14px;
+
+  background-image: url("/img/icon-menu-open.svg");
+}
+
+.page-header__wrapper--js.page-header__wrapper--closed ~ .page-header__nav .page-header__menu {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__wrapper--js.page-header__wrapper--closed ~ .page-header__user-menu {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__wrapper--js ~ .page-header__nav .page-header__menu {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+  }
+}
+
+.page-header__wrapper--js ~ .page-header__user-menu {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+  }
+}
+
+.page-header__wrapper--js ~ .page-header__user-menu .user-menu__item:last-of-type {
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $gray-236;
   }
 }

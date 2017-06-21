@@ -71,7 +71,7 @@
     align-items: flex-start;
     width: 367px;
     padding-top: 41px;
-    padding-right: 75px;
+    padding-right: 79px;
     padding-bottom: 33px;
     padding-left: 79px;
 
@@ -108,6 +108,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 208px;
+  }
 }
 
 .production__video {
@@ -127,7 +131,19 @@
 }
 
 .production__video-img {
+  width: 260px;
+  height: 150px;
+
   vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
+  }
 }
 
 .production__video-play {
