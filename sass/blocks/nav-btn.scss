@@ -12,6 +12,14 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
+    padding-right: 8px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+
     border: none;
   }
 }
