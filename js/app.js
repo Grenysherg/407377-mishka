@@ -83,7 +83,7 @@ if (mapImg !== null) {
       map: map,
       optimized: false,
       icon: {
-        url: "../img/icon-map-pin.svg",
+        url: "img/icon-map-pin.svg",
         scaledSize: new google.maps.Size(67, 100)
       }
     });
