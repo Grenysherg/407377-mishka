@@ -71,7 +71,7 @@
   height: 20px;
 
   background-color: transparent;
-  background-image: url("/img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   border: 0;
 
@@ -180,7 +180,7 @@
   width: 20px;
   height: 14px;
 
-  background-image: url("/img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .page-header__wrapper--js.page-header__wrapper--closed ~ .page-header__nav .page-header__menu {
