@@ -15,7 +15,7 @@
   height: 7px;
 
   background-color: transparent;
-  background-image: url("/img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 7px;
 
@@ -124,8 +124,9 @@
 
   @media (min-width: $tablet-width) {
     width: 167px;
-    padding-left: 67px;
+    padding-top: 5px;
     padding-right: 27px;
+    padding-left: 67px;
 
     line-height: 17px;
     text-align: center;

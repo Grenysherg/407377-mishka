@@ -1,20 +1,4 @@
 .copyright {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 3px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 8px;
-  }
-}
-
-.copyright__text {
-  margin-right: 37px;
-
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -26,9 +10,12 @@
 }
 
 .copyright__link {
-  flex-shrink: 0;
+  display: inline-block;
   width: 27px;
   height: 34px;
+  margin-left: 24px;
+
+  vertical-align: middle;
 }
 
 .copyright__link-icon {

@@ -26,28 +26,6 @@
   }
 }
 
-.contacts__container::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-
-    position: absolute;
-    top: 47px;
-    right: 90px;
-
-    width: 47px;
-    height: 81px;
-
-    background-color: transparent;
-    background-image: url("/img/icon-flag.svg");
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 133px;
-    left: 113px;
-  }
-}
-
 .contacts__title {
   flex-shrink: 0;
   width: $mobile-width;
@@ -85,6 +63,28 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.contacts__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+
+    position: absolute;
+    top: 47px;
+    right: 53px;
+
+    width: 47px;
+    height: 81px;
+
+    background-color: transparent;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 133px;
+    left: 113px;
   }
 }
 
@@ -251,7 +251,7 @@
   height: 100px;
 
   background-color: transparent;
-  background-image: url("/img/icon-map-pin.svg");
+  background-image: url("../img/icon-map-pin.svg");
   background-repeat: no-repeat;
 
   pointer-events: none;
