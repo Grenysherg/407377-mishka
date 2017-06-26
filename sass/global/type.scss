@@ -15,6 +15,9 @@ html, body {
 
 body {
   min-width: $mobile-width;
+
+  font-family: $open-sans;
+  letter-spacing: 0;
 }
 
 a {

@@ -80,51 +80,39 @@
             <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
           </picture>
         </a>
-        <div class="page-header__wrapper page-header__wrapper--closed">
-          <button class="page-header__toggle" type="button">Открыть меню</button>
-        </div>
+        <button class="page-header__toggle page-header__toggle--closed" type="button">Открыть меню</button>
         <nav class="main-nav page-header__nav">
           <ul class="page-header__menu main-nav__menu">
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">
-                <div class="main-nav__link-container">
-                  <b class="main-nav__link-text">Каталог товаров</b>
-                </div>
+                <b class="main-nav__link-text">Каталог товаров</b>
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link">
-                <div class="main-nav__link-container">
-                  <b class="main-nav__link-text">Вязание на заказ</b>
-                </div>
+                <b class="main-nav__link-text">Вязание на заказ</b>
               </a>
             </li>
           </ul>
         </nav>
         <ul class="user-menu page-header__user-menu">
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
-              <div class="user-menu__link-container user-menu__link-container--alone-icon">
-                <svg class="user-menu__link-icon user-menu__link-icon--alone" width="25" height="25">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="3" y="4" width="17.6" height="17.6"></use>
-                </svg>
-                <b class="user-menu__link-text user-menu__link-text--hidden">Поиск по сайту</b>
-              </div>
+            <a class="user-menu__link user-menu__link--alone-icon" href="#">
+              <svg class="user-menu__link-icon user-menu__link-icon--alone" width="25" height="25">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="3" y="4" width="17.6" height="17.6"></use>
+              </svg>
+              <b class="user-menu__link-text user-menu__link-text--hidden">Поиск по сайту</b>
             </a>
           </li>
           <li class="user-menu__item">
             <a class="user-menu__link" href="#">
-              <div class="user-menu__link-container">
-                <svg class="user-menu__link-icon" width="25" height="25">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" x="1" y="2" width="20.294" height="18.849"></use>
-                </svg>
-                <b class="user-menu__link-text">Корзина: пока пуста</b>
-              </div>
+              <svg class="user-menu__link-icon" width="25" height="25">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" x="1" y="2" width="20.294" height="18.849"></use>
+              </svg>
+              <b class="user-menu__link-text">Корзина: пока пуста</b>
             </a>
           </li>
         </ul>
-      </div>
-      <div class="page-header__container page-header__container--absolute">
         <ul class="product-menu page-header__product-menu">
           <li class="product-menu__item">
             <a class="product-menu__link" href="#">Новые поступления</a>
@@ -228,11 +216,11 @@
         <fieldset class="form-order__section form-order__section--background-gray">
           <div class="form-order__container form-order__container--section form-order__container--padding-bottom">
             <h2 class="form-order__section-title form-order__section-title--alone-form">
-              <span class="form-order__section-title-text">Тел</span>
+              <label class="form-order__section-title-text form-order__section-title-text--label" for="customer-tel">Тел</label>
             </h2>
             <div class="form-order__section-list form-order__section-list--text-form">
               <label class="text-form form-order__section-item">
-                <input class="text-form__input text-form__input--bigger" type="tel" name="customer-tel" placeholder="+7 ХХХ ХХ ХХ*">
+                <input class="text-form__input text-form__input--bigger" type="tel" id="customer-tel" name="customer-tel" placeholder="+7 ХХХ ХХ ХХ*">
                 <svg class="text-form__icon" width="25" height="24">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone" x="0" y="0" width="24.829" height="24.333"></use>
                 </svg>
@@ -243,11 +231,11 @@
         <fieldset class="form-order__section form-order__section--background-gray">
           <div class="form-order__container form-order__container--section form-order__container--padding-top">
             <h2 class="form-order__section-title form-order__section-title--alone-form">
-              <span class="form-order__section-title-text">E-mail</span>
+              <label class="form-order__section-title-text form-order__section-title-text--label" for="customer-email">E-mail</label>
             </h2>
             <div class="form-order__section-list form-order__section-list--text-form">
               <label class="text-form form-order__section-item">
-                <input class="text-form__input text-form__input--bigger" type="email" name="customer-email" placeholder="Ваш Email*">
+                <input class="text-form__input text-form__input--bigger" type="email" id="customer-email" name="customer-email" placeholder="Ваш Email*">
                 <svg class="text-form__icon" width="32" height="32">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail" x="0" y="0" width="32" height="32"></use>
                 </svg>
@@ -258,11 +246,11 @@
         <fieldset class="form-order__section">
           <div class="form-order__container form-order__container--section">
             <h2 class="form-order__section-title form-order__section-title--smaller-bottom">
-              <span class="form-order__section-title-text">Доп</span>
+              <label class="form-order__section-title-text form-order__section-title-text--label" for="customer-wishes">Доп</label>
             </h2>
             <div class="form-order__section-list form-order__section-list--text-form">
               <label class="text-form form-order__section-item">
-                <textarea class="text-form__input text-form__input--textarea" name="customer-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="text-form__input text-form__input--textarea" id="customer-wishes" name="customer-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
             </div>
           </div>

@@ -45,12 +45,11 @@
 }
 
 .page-footer__logo {
-  @media (max-width: $tablet-width) {
-    @include hidden-block();
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
     flex-shrink: 0;
+    display: block;
   }
 }
 

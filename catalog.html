@@ -80,51 +80,39 @@
             <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
           </picture>
         </a>
-        <div class="page-header__wrapper page-header__wrapper--closed">
-          <button class="page-header__toggle" type="button">Открыть меню</button>
-        </div>
+        <button class="page-header__toggle page-header__toggle--closed" type="button">Открыть меню</button>
         <nav class="main-nav page-header__nav">
           <ul class="page-header__menu main-nav__menu">
             <li class="main-nav__item">
               <a class="main-nav__link">
-                <div class="main-nav__link-container">
-                  <b class="main-nav__link-text">Каталог товаров</b>
-                </div>
+                <b class="main-nav__link-text">Каталог товаров</b>
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">
-                <div class="main-nav__link-container">
-                  <b class="main-nav__link-text">Вязание на заказ</b>
-                </div>
+                <b class="main-nav__link-text">Вязание на заказ</b>
               </a>
             </li>
           </ul>
         </nav>
         <ul class="user-menu page-header__user-menu">
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
-              <div class="user-menu__link-container user-menu__link-container--alone-icon">
-                <svg class="user-menu__link-icon user-menu__link-icon--alone" width="25" height="25">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="3" y="4" width="17.6" height="17.6"></use>
-                </svg>
-                <b class="user-menu__link-text user-menu__link-text--hidden">Поиск по сайту</b>
-              </div>
+            <a class="user-menu__link user-menu__link--alone-icon" href="#">
+              <svg class="user-menu__link-icon user-menu__link-icon--alone" width="25" height="25">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="3" y="4" width="17.6" height="17.6"></use>
+              </svg>
+              <b class="user-menu__link-text user-menu__link-text--hidden">Поиск по сайту</b>
             </a>
           </li>
           <li class="user-menu__item">
             <a class="user-menu__link" href="#">
-              <div class="user-menu__link-container">
-                <svg class="user-menu__link-icon" width="25" height="25">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" x="1" y="2" width="20.294" height="18.849"></use>
-                </svg>
-                <b class="user-menu__link-text">Корзина: пока пуста</b>
-              </div>
+              <svg class="user-menu__link-icon" width="25" height="25">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" x="1" y="2" width="20.294" height="18.849"></use>
+              </svg>
+              <b class="user-menu__link-text">Корзина: пока пуста</b>
             </a>
           </li>
         </ul>
-      </div>
-      <div class="page-header__container page-header__container--absolute">
         <ul class="product-menu page-header__product-menu">
           <li class="product-menu__item">
             <a class="product-menu__link" href="#">Новые поступления</a>
@@ -290,35 +278,33 @@
     </footer>
     <div class="modal">
       <div class="modal__overlay"></div>
-      <div class="modal__container">
-        <div class="modal__window">
-          <div class="modal__window-container">
-            <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-            <form class="form-offer modal__offer" action="https://echo.htmlacademy.ru/" method="post">
-              <b class="form-offer__title">Выберите размер:</b>
-              <div class="form-offer__list">
-                <label class="input-like-btn-form form-offer__item">
-                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
-                  <span class="input-like-btn-form__custom">
-                    <b class="input-like-btn-form__label">S</b>
-                  </span>
-                </label>
-                <label class="input-like-btn-form form-offer__item">
-                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
-                  <span class="input-like-btn-form__custom">
-                    <b class="input-like-btn-form__label">M</b>
-                  </span>
-                </label>
-                <label class="input-like-btn-form form-offer__item">
-                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
-                  <span class="input-like-btn-form__custom">
-                    <b class="input-like-btn-form__label">L</b>
-                  </span>
-                </label>
-              </div>
-              <button class="btn btn--modal form-offer__submit" type="submit">Добавить</button>
-            </form>
-          </div>
+      <div class="modal__window">
+        <div class="modal__window-container">
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+          <form class="form-offer modal__offer" action="https://echo.htmlacademy.ru/" method="post">
+            <b class="form-offer__title">Выберите размер:</b>
+            <div class="form-offer__list">
+              <label class="input-like-btn-form form-offer__item">
+                <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
+                <span class="input-like-btn-form__custom">
+                  <b class="input-like-btn-form__label">S</b>
+                </span>
+              </label>
+              <label class="input-like-btn-form form-offer__item">
+                <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
+                <span class="input-like-btn-form__custom">
+                  <b class="input-like-btn-form__label">M</b>
+                </span>
+              </label>
+              <label class="input-like-btn-form form-offer__item">
+                <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
+                <span class="input-like-btn-form__custom">
+                  <b class="input-like-btn-form__label">L</b>
+                </span>
+              </label>
+            </div>
+            <button class="btn btn--modal form-offer__submit" type="submit">Добавить</button>
+          </form>
         </div>
       </div>
     </div>

@@ -12,7 +12,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 375px;
-    margin-top: 12px;
 
     background-color: transparent;
   }
@@ -58,47 +57,38 @@
 
 .main-nav__link {
   display: block;
-}
-
-.main-nav__link-container {
-  width: $mobile-width;
-  margin: 0 auto;
   padding-top: 26px;
-  padding-right: $mobile-padding;
   padding-bottom: 28px;
-  padding-left: 76px;
-
-  pointer-events: none;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    margin: 0;
     padding-top: 8px;
-    padding-right: 9px;
+    padding-right: 17px;
     padding-bottom: 8px;
-    padding-left: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 29px;
-    padding-right: 35px;
-    padding-bottom: 34px;
+    padding-top: 31px;
+    padding-right: 34px;
+    padding-bottom: 32px;
     padding-left: 34px;
   }
 }
 
 .main-nav__link-text {
+  margin-right: 20px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-family: $open-sans;
-  letter-spacing: 0;
   color: $black;
   text-transform: none;
 
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-right: 0;
 
     font-size: 15px;
   }
