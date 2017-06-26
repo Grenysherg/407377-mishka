@@ -1,6 +1,11 @@
 .form-offer {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 58px;
+    padding-left: 58px;
+  }
 }
 
 .form-offer__title {
@@ -10,8 +15,6 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  font-family: $open-sans;
-  letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
   text-align: center;

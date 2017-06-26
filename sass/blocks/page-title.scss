@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding-top: 93px;
+    padding-top: 34px;
     padding-right: $tablet-padding;
     padding-bottom: 90px;
     padding-left: $tablet-padding;
@@ -52,7 +52,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding-top: 93px;
+    padding-top: 34px;
     padding-right: $big-padding;
     padding-bottom: 123px;
     padding-left: $big-padding;
@@ -63,30 +63,22 @@
   padding-bottom: 122px;
 
   background-color: $gray-249;
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 21%;
 
-  @media (max-width: $tablet-width) and (max-resolution: 144dpi),
-  (max-width: $tablet-width) and (max-resolution: 1.5dppx) {
-    background-image: url("../img/hero-mobile@1x.jpg");
-  }
-
-  @media (max-width: $tablet-width) and (min-resolution: 144dpi),
-  (max-width: $tablet-width) and (min-resolution: 1.5dppx) {
+  @media (min-width: $mobile-width) and (min-resolution: 144dpi),
+  (min-width: $mobile-width) and (min-resolution: 1.5dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px auto;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 153px;
+    padding-top: 94px;
     padding-bottom: 373px;
 
-    background-position: 50% 1%;
-  }
-
-  @media (min-width: $tablet-width) and (max-resolution: 144dpi),
-  (min-width: $tablet-width) and (max-resolution: 1.5dppx) {
     background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% 34%;
   }
 
   @media (min-width: $tablet-width) and (min-resolution: 144dpi),
@@ -96,7 +88,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 153px;
+    padding-top: 94px;
     padding-bottom: 359px;
 
     background-size: 1250px 746px;
@@ -110,8 +102,6 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  font-family: $open-sans;
-  letter-spacing: 0;
   color: $black;
   text-transform: none;
   text-align: center;

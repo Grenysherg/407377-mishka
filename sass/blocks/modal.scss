@@ -8,24 +8,6 @@
   left: 0;
   z-index: 100;
 
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.modal__overlay {
-  position: absolute;
-  z-index: 100;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba($white, 0.9);
-
-  cursor: pointer;
-}
-
-.modal__container {
   display: flex;
   align-items: center;
   width: 100%;
@@ -34,14 +16,20 @@
   @media (min-width: $tablet-width) {
     justify-content: center;
     align-items: center;
-    width: $tablet-width;
-    margin-right: auto;
-    margin-left: auto;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
+.modal__overlay {
+  position: absolute;
+  z-index: 100;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($white, 0.9);
+
+  cursor: pointer;
 }
 
 .modal__window {
@@ -58,6 +46,8 @@
   @media (min-width: $tablet-width) {
     flex-grow: 0;
     width: 568px;
+    margin-right: auto;
+    margin-left: auto;
 
     border: 1px solid $gray-199;
   }
@@ -77,9 +67,14 @@
     width: 566px;
     margin: 0;
     padding-top: 33px;
-    padding-right: 108px;
+    padding-right: $tablet-padding;
     padding-bottom: 46px;
-    padding-left: 108px;
+    padding-left: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
   }
 }
 
@@ -91,8 +86,6 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  font-family: $open-sans;
-  letter-spacing: 0;
   color: $black;
   text-transform: uppercase;
   text-align: center;
@@ -107,4 +100,8 @@
 
 .modal__offer {
   flex-shrink: 0;
+}
+
+.modal-overlay {
+  display: none;
 }

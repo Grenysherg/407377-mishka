@@ -87,8 +87,6 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-family: $open-sans;
-  letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
 
@@ -207,8 +205,6 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  font-family: $open-sans;
-  letter-spacing: 0;
   color: $downy;
   text-transform: uppercase;
   vertical-align: top;
@@ -224,6 +220,10 @@
 
     background-color: transparent;
   }
+}
+
+.form-order__section-title-text--label {
+  cursor: pointer;
 }
 
 .form-order__section-list {
@@ -286,8 +286,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-family: $open-sans;
-  letter-spacing: 0;
   color: $gray-68;
   text-transform: none;
 

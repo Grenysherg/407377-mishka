@@ -71,7 +71,7 @@
         <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
       </symbol>
     </svg>
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <div class="page-header__container">
         <a class="logo page-header__logo">
           <picture>
@@ -80,51 +80,39 @@
             <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
           </picture>
         </a>
-        <div class="page-header__wrapper page-header__wrapper--closed">
-          <button class="page-header__toggle" type="button">Открыть меню</button>
-        </div>
+        <button class="page-header__toggle page-header__toggle--closed" type="button">Открыть меню</button>
         <nav class="main-nav page-header__nav">
           <ul class="page-header__menu main-nav__menu">
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">
-                <div class="main-nav__link-container">
-                  <b class="main-nav__link-text">Каталог товаров</b>
-                </div>
+                <b class="main-nav__link-text">Каталог товаров</b>
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">
-                <div class="main-nav__link-container">
-                  <b class="main-nav__link-text">Вязание на заказ</b>
-                </div>
+                <b class="main-nav__link-text">Вязание на заказ</b>
               </a>
             </li>
           </ul>
         </nav>
         <ul class="user-menu page-header__user-menu">
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
-              <div class="user-menu__link-container user-menu__link-container--alone-icon">
-                <svg class="user-menu__link-icon user-menu__link-icon--alone" width="25" height="25">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="3" y="4" width="17.6" height="17.6"></use>
-                </svg>
-                <b class="user-menu__link-text user-menu__link-text--hidden">Поиск по сайту</b>
-              </div>
+            <a class="user-menu__link user-menu__link--alone-icon" href="#">
+              <svg class="user-menu__link-icon user-menu__link-icon--alone" width="25" height="25">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="3" y="4" width="17.6" height="17.6"></use>
+              </svg>
+              <b class="user-menu__link-text user-menu__link-text--hidden">Поиск по сайту</b>
             </a>
           </li>
           <li class="user-menu__item">
             <a class="user-menu__link" href="#">
-              <div class="user-menu__link-container">
-                <svg class="user-menu__link-icon" width="25" height="25">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" x="1" y="2" width="20.294" height="18.849"></use>
-                </svg>
-                <b class="user-menu__link-text">Корзина: пока пуста</b>
-              </div>
+              <svg class="user-menu__link-icon" width="25" height="25">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" x="1" y="2" width="20.294" height="18.849"></use>
+              </svg>
+              <b class="user-menu__link-text">Корзина: пока пуста</b>
             </a>
           </li>
         </ul>
-      </div>
-      <div class="page-header__container page-header__container--absolute">
         <ul class="product-menu page-header__product-menu">
           <li class="product-menu__item">
             <a class="product-menu__link" href="#">Новые поступления</a>
@@ -146,22 +134,18 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link" href="interior-items.html">
-              <div class="catalog__link-container">
-                <b class="catalog__link-text">Предметы интерьера</b>
-                <svg class="catalog__link-icon" width="63" height="63">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior" x="12" y="1" width="40.219" height="62.411"></use>
-                </svg>
-              </div>
+              <b class="catalog__link-text">Предметы интерьера</b>
+              <svg class="catalog__link-icon" width="63" height="63">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior" x="12" y="1" width="40.219" height="62.411"></use>
+              </svg>
             </a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link catalog__link--color-darker" href="toys.html">
-              <div class="catalog__link-container">
-                <b class="catalog__link-text">Детские игрушки</b>
-                <svg class="catalog__link-icon" width="63" height="63">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy" x="2" y="1" width="60" height="59.62"></use>
-                </svg>
-              </div>
+              <b class="catalog__link-text">Детские игрушки</b>
+              <svg class="catalog__link-icon" width="63" height="63">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy" x="2" y="1" width="60" height="59.62"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -172,30 +156,32 @@
             <h2 class="week-product__title-text">Вязаные корзинки</h2>
             <b class="week-product__title-desc">Товар недели</b>
           </div>
-          <p class="week-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
-          <table class="week-product__characters">
-            <tbody>
-              <tr class="week-product__characters-item">
-                <td class="week-product__characters-name">Цвет:</td>
-                <td class="week-product__characters-value">«Тиффани»/серый</td>
-              </tr>
-              <tr class="week-product__characters-item">
-                <td class="week-product__characters-name">Диаметр:</td>
-                <td class="week-product__characters-value">25 см</td>
-              </tr>
-              <tr class="week-product__characters-item">
-                <td class="week-product__characters-name">Высота:</td>
-                <td class="week-product__characters-value">15 см</td>
-              </tr>
-            </tbody>
-          </table>
-          <picture class="week-product__img">
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
-            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
-          </picture>
-          <b class="week-product__price">Цена: 990 руб.</b>
-          <a class="btn week-product__order" href="add-cart.html">Заказать</a>
+          <div class="week-product__info">
+            <p class="week-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+            <table class="week-product__characters">
+              <tbody>
+                <tr class="week-product__characters-item">
+                  <td class="week-product__characters-name">Цвет:</td>
+                  <td class="week-product__characters-value">«Тиффани»/серый</td>
+                </tr>
+                <tr class="week-product__characters-item">
+                  <td class="week-product__characters-name">Диаметр:</td>
+                  <td class="week-product__characters-value">25 см</td>
+                </tr>
+                <tr class="week-product__characters-item">
+                  <td class="week-product__characters-name">Высота:</td>
+                  <td class="week-product__characters-value">15 см</td>
+                </tr>
+              </tbody>
+            </table>
+            <picture class="week-product__img">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
+            <b class="week-product__price">Цена: 990 руб.</b>
+            <a class="btn week-product__order" href="add-cart.html">Заказать</a>
+          </div>
         </div>
       </article>
       <section class="advantages">
@@ -341,35 +327,33 @@
     </footer>
     <div class="modal">
       <div class="modal__overlay"></div>
-      <div class="modal__container">
-        <div class="modal__window">
-          <div class="modal__window-container">
-            <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-            <form class="form-offer modal__offer" action="https://echo.htmlacademy.ru/" method="post">
-              <b class="form-offer__title">Выберите размер:</b>
-              <div class="form-offer__list">
-                <label class="input-like-btn-form form-offer__item">
-                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
-                  <span class="input-like-btn-form__custom">
-                    <b class="input-like-btn-form__label">S</b>
-                  </span>
-                </label>
-                <label class="input-like-btn-form form-offer__item">
-                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
-                  <span class="input-like-btn-form__custom">
-                    <b class="input-like-btn-form__label">M</b>
-                  </span>
-                </label>
-                <label class="input-like-btn-form form-offer__item">
-                  <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
-                  <span class="input-like-btn-form__custom">
-                    <b class="input-like-btn-form__label">L</b>
-                  </span>
-                </label>
-              </div>
-              <button class="btn btn--modal form-offer__submit" type="submit">Добавить</button>
-            </form>
-          </div>
+      <div class="modal__window">
+        <div class="modal__window-container">
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+          <form class="form-offer modal__offer" action="https://echo.htmlacademy.ru/" method="post">
+            <b class="form-offer__title">Выберите размер:</b>
+            <div class="form-offer__list">
+              <label class="input-like-btn-form form-offer__item">
+                <input class="input-like-btn-form__input" type="radio" name="product-size" value="s" checked>
+                <span class="input-like-btn-form__custom">
+                  <b class="input-like-btn-form__label">S</b>
+                </span>
+              </label>
+              <label class="input-like-btn-form form-offer__item">
+                <input class="input-like-btn-form__input" type="radio" name="product-size" value="m">
+                <span class="input-like-btn-form__custom">
+                  <b class="input-like-btn-form__label">M</b>
+                </span>
+              </label>
+              <label class="input-like-btn-form form-offer__item">
+                <input class="input-like-btn-form__input" type="radio" name="product-size" value="l">
+                <span class="input-like-btn-form__custom">
+                  <b class="input-like-btn-form__label">L</b>
+                </span>
+              </label>
+            </div>
+            <button class="btn btn--modal form-offer__submit" type="submit">Добавить</button>
+          </form>
         </div>
       </div>
     </div>
