@@ -1,43 +1,55 @@
-.form-offer {
-  display: flex;
-  flex-direction: column;
+.form-offer
+{
+    display: flex;
+    flex-direction: column;
 
-  @media (min-width: $tablet-width) {
-    padding-right: 58px;
-    padding-left: 58px;
-  }
+    @media (min-width: $tablet-width)
+    {
+        padding-right: 58px;
+        padding-left: 58px;
+    }
 }
 
-.form-offer__title {
-  margin-bottom: 23px;
+.form-offer__title
+{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color: $gray-68;
-  text-transform: none;
-  text-align: center;
+    margin-bottom: 23px;
 
-  @media (min-width: $tablet-width) {
+    text-align: center;
+    text-transform: none;
+
+    color: $gray-68;
+
+    @media (min-width: $tablet-width)
+    {
+        font-size: 17px;
+
+        margin-bottom: 21px;
+    }
+}
+
+.form-offer__list
+{
+    display: flex;
+
     margin-bottom: 21px;
 
-    font-size: 17px;
-  }
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.form-offer__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 21px;
+.form-offer__item
+{
+    margin-bottom: 10px;
+
+    flex-shrink: 0;
 }
 
-.form-offer__item {
-  flex-shrink: 0;
-  margin-bottom: 10px;
-}
-
-.form-offer__submit {
-  flex-shrink: 0;
+.form-offer__submit
+{
+    flex-shrink: 0;
 }

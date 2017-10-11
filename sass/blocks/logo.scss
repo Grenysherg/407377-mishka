@@ -1,42 +1,51 @@
-.logo[href]:hover {
-  opacity: 0.6;
+.logo[href]:hover
+{
+    opacity: .6;
 }
 
-.logo[href]:active {
-  opacity: 0.3;
+.logo[href]:active
+{
+    opacity: .3;
 }
 
 .logo--footer[href]:hover,
-.logo--footer[href]:active {
-  opacity: 1;
+.logo--footer[href]:active
+{
+    opacity: 1;
 }
 
-.logo__img {
-  width: 86px;
-  height: 35px;
+.logo__img
+{
+    width: 86px;
+    height: 35px;
 
-  pointer-events: none;
+    pointer-events: none;
 
-  @media (min-width: $tablet-width) {
-    width: 113px;
-    height: 46px;
-  }
+    @media (min-width: $tablet-width)
+    {
+        width: 113px;
+        height: 46px;
+    }
 
-  @media (min-width: $desktop-width) {
-    width: 149px;
-    height: 72px;
-  }
+    @media (min-width: $desktop-width)
+    {
+        width: 149px;
+        height: 72px;
+    }
 }
 
-.logo__img--footer {
-  width: 102px;
-  height: 34px;
+.logo__img--footer
+{
+    width: 102px;
+    height: 34px;
 }
 
-.logo--footer[href]:hover .logo__img--footer {
-  fill: $puerto-rico;
+.logo--footer[href]:hover .logo__img--footer
+{
+    fill: $puerto-rico;
 }
 
-.logo--footer[href]:active .logo__img--footer {
-  fill: rgba($puerto-rico, 0.3);
+.logo--footer[href]:active .logo__img--footer
+{
+    fill: rgba($puerto-rico, .3);
 }

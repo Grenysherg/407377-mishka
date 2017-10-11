@@ -1,24 +1,28 @@
-.video-btn {
-  width: 102px;
-  height: 78px;
-  padding: 0;
+.video-btn
+{
+    width: 102px;
+    height: 78px;
+    padding: 0;
 
-  background-color: transparent;
-  background-image: url("../img/icon-play.svg");
-  background-repeat: no-repeat;
-  border: 0;
+    cursor: pointer;
 
-  cursor: pointer;
-  outline: none;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    background-image: url('../img/icon-play.svg');
+    background-repeat: no-repeat;
 
-  @include hidden-text();
+    @include hidden-text();
 }
 
-.video-btn:hover {
-  transform: scale(1.2);
+.video-btn:hover
+{
+    transform: scale(1.2);
 }
 
-.video-btn:active {
-  transform: scale(0.8);
-  opacity: 0.3;
+.video-btn:active
+{
+    transform: scale(.8);
+
+    opacity: .3;
 }

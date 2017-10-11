@@ -24,19 +24,19 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: $desktop-width;
     padding-top: 109px;
     padding-right: $desktop-padding;
     padding-bottom: 57px;
     padding-left: $desktop-padding;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .main-catalog__item {
-  flex-shrink: 0;
   margin-bottom: 31px;
+  flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;

@@ -1,41 +1,50 @@
-.input-like-btn-form__input {
-  @include hidden-block();
+.input-like-btn-form__input
+{
+    @include hidden-block();
 }
 
-.input-like-btn-form__custom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 82px;
-  height: 52px;
+.input-like-btn-form__custom
+{
+    display: flex;
 
-  border: 2px solid rgba($gray-68, 0.1);
+    width: 82px;
+    height: 52px;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  @media (min-width: $tablet-width) {
-    width: 112px;
-  }
+    border: 2px solid rgba($gray-68, .1);
+
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width)
+    {
+        width: 112px;
+    }
 }
 
-.input-like-btn-form__custom:hover {
-  border-color: rgba($gray-68, 0.3);
+.input-like-btn-form__custom:hover
+{
+    border-color: rgba($gray-68, .3);
 }
 
-.input-like-btn-form__label {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  color: $gray-68;
-  text-transform: none;
+.input-like-btn-form__label
+{
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 16px;
 
-  pointer-events: none;
+    text-transform: none;
+    pointer-events: none;
+
+    color: $gray-68;
 }
 
 .input-like-btn-form__input:checked ~ .input-like-btn-form__custom,
-.input-like-btn-form__custom:active {
-  border-color: $downy;
+.input-like-btn-form__custom:active
+{
+    cursor: auto;
 
-  cursor: auto;
+    border-color: $downy;
 }

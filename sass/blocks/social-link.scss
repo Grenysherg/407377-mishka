@@ -1,18 +1,22 @@
-.social-link {
-  display: block;
+.social-link
+{
+    display: block;
 }
 
-.social-link__icon {
-  width: 40px;
-  height: 40px;
+.social-link__icon
+{
+    width: 40px;
+    height: 40px;
 
-  pointer-events: none;
+    pointer-events: none;
 }
 
-.social-link:hover .social-link__icon {
-  fill: $puerto-rico;
+.social-link:hover .social-link__icon
+{
+    fill: $puerto-rico;
 }
 
-.social-link:active .social-link__icon {
-  fill: rgba($puerto-rico, 0.3);
+.social-link:active .social-link__icon
+{
+    fill: rgba($puerto-rico, .3);
 }

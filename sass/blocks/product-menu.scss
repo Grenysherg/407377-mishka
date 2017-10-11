@@ -1,56 +1,74 @@
-.product-menu {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 350px;
-    margin-bottom: 0;
-    margin-left: 25px;
-    padding: 0;
+.product-menu
+{
+    @media (min-width: $desktop-width)
+    {
+        display: flex;
 
-    list-style: none;
-  }
+        max-width: 350px;
+        margin-bottom: 0;
+        margin-left: 25px;
+        padding: 0;
+
+        list-style: none;
+
+        flex-wrap: wrap;
+    }
 }
 
-.product-menu__item {
-  @media (min-width: $desktop-width) {
-    flex-shrink: 0;
-    margin-right: 41px;
-    margin-bottom: 10px;
-  }
+.product-menu__item
+{
+    @media (min-width: $desktop-width)
+    {
+        margin-right: 41px;
+        margin-bottom: 10px;
+
+        flex-shrink: 0;
+    }
 }
 
-.product-menu__item:nth-of-type(2n) {
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
-  }
+.product-menu__item:nth-of-type(2n)
+{
+    @media (min-width: $desktop-width)
+    {
+        margin-right: 0;
+    }
 }
 
-.product-menu__link {
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-    padding-top: 8px;
-    padding-right: 10px;
-    padding-bottom: 8px;
-    padding-left: 10px;
+.product-menu__link
+{
+    @media (min-width: $desktop-width)
+    {
+        font-size: 15px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 24px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 24px;
-    color: $black;
-    text-transform: none;
-    vertical-align: top;
-  }
+        display: inline-block;
+
+        padding-top: 8px;
+        padding-right: 10px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+
+        vertical-align: top;
+        text-transform: none;
+
+        color: $black;
+    }
 }
 
-.product-menu__link[href]:hover {
-  @media (min-width: $desktop-width) {
-    color: rgba($black, 0.6);
-  }
+.product-menu__link[href]:hover
+{
+    @media (min-width: $desktop-width)
+    {
+        color: rgba($black, .6);
+    }
 }
 
-.product-menu__link[href]:active {
-  @media (min-width: $desktop-width) {
-    color: rgba($black, 0.3);
-  }
+.product-menu__link[href]:active
+{
+    @media (min-width: $desktop-width)
+    {
+        color: rgba($black, .3);
+    }
 }

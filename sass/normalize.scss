@@ -9,10 +9,12 @@
  *    IE on Windows Phone and in iOS.
  */
 
-html {
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+html
+{
+    line-height: 1.15; /* 1 */
+
+        -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -27,8 +29,9 @@ aside,
 footer,
 header,
 nav,
-section {
-  display: block;
+section
+{
+    display: block;
 }
 
 /**
@@ -36,9 +39,11 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+h1
+{
+    font-size: 2em;
+
+    margin: .67em 0;
 }
 
 /* Grouping content
@@ -51,16 +56,19 @@ h1 {
 
 figcaption,
 figure,
-main { /* 1 */
-  display: block;
+main
+{
+    /* 1 */
+    display: block;
 }
 
 /**
  * Add the correct margin in IE 8.
  */
 
-figure {
-  margin: 1em 40px;
+figure
+{
+    margin: 1em 40px;
 }
 
 /**
@@ -68,10 +76,12 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+hr
+{
+    overflow: visible; /* 2 */
+
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
 }
 
 /**
@@ -79,9 +89,10 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+pre
+{
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -92,9 +103,11 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 
-a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
+a
+{
+    background-color: transparent; /* 1 */
+
+    -webkit-text-decoration-skip: objects; /* 2 */
 }
 
 /**
@@ -102,10 +115,12 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+abbr[title]
+{
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+
+    border-bottom: none; /* 1 */
 }
 
 /**
@@ -113,8 +128,9 @@ abbr[title] {
  */
 
 b,
-strong {
-  font-weight: inherit;
+strong
+{
+    font-weight: inherit;
 }
 
 /**
@@ -124,34 +140,38 @@ strong {
 
 code,
 kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+samp
+{
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
 }
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 
-dfn {
-  font-style: italic;
+dfn
+{
+    font-style: italic;
 }
 
 /**
  * Add the correct background and color in IE 9-.
  */
 
-mark {
-  background-color: #ff0;
-  color: #000;
+mark
+{
+    color: #000;
+    background-color: #ff0;
 }
 
 /**
  * Add the correct font size in all browsers.
  */
 
-small {
-  font-size: 80%;
+small
+{
+    font-size: 80%;
 }
 
 /**
@@ -160,19 +180,24 @@ small {
  */
 
 sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+sup
+{
+    font-size: 75%;
+    line-height: 0;
+
+    position: relative;
+
+    vertical-align: baseline;
 }
 
-sub {
-  bottom: -0.25em;
+sub
+{
+    bottom: -.25em;
 }
 
-sup {
-  top: -0.5em;
+sup
+{
+    top: -.5em;
 }
 
 /* Embedded content
@@ -183,33 +208,38 @@ sup {
  */
 
 audio,
-video {
-  display: inline-block;
+video
+{
+    display: inline-block;
 }
 
 /**
  * Add the correct display in iOS 4-7.
  */
 
-audio:not([controls]) {
-  display: none;
-  height: 0;
+audio:not([controls])
+{
+    display: none;
+
+    height: 0;
 }
 
 /**
  * Remove the border on images inside links in IE 10-.
  */
 
-img {
-  border-style: none;
+img
+{
+    border-style: none;
 }
 
 /**
  * Hide the overflow in IE.
  */
 
-svg:not(:root) {
-  overflow: hidden;
+svg:not(:root)
+{
+    overflow: hidden;
 }
 
 /* Forms
@@ -223,8 +253,9 @@ button,
 input,
 optgroup,
 select,
-textarea {
-  margin: 0;
+textarea
+{
+    margin: 0;
 }
 
 /**
@@ -233,8 +264,10 @@ textarea {
  */
 
 button,
-input { /* 1 */
-  overflow: visible;
+input
+{
+    /* 1 */
+    overflow: visible;
 }
 
 /**
@@ -243,8 +276,10 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
-  text-transform: none;
+select
+{
+    /* 1 */
+    text-transform: none;
 }
 
 /**
@@ -254,10 +289,12 @@ select { /* 1 */
  */
 
 button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; /* 2 */
+html [type='button'],
+/* 1 */
+[type='reset'],
+[type='submit']
+{
+    -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -265,11 +302,13 @@ html [type="button"], /* 1 */
  */
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner
+{
+    padding: 0;
+
+    border-style: none;
 }
 
 /**
@@ -277,10 +316,11 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring
+{
+    outline: 1px dotted ButtonText;
 }
 
 /**
@@ -290,13 +330,17 @@ button:-moz-focusring,
  *    `fieldset` elements in all browsers.
  */
 
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+legend
+{
+    display: table; /* 1 */
+
+    box-sizing: border-box; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+
+    white-space: normal; /* 1 */
+
+    color: inherit; /* 2 */
 }
 
 /**
@@ -304,17 +348,20 @@ legend {
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
-progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+progress
+{
+    display: inline-block; /* 1 */
+
+    vertical-align: baseline; /* 2 */
 }
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 
-textarea {
-  overflow: auto;
+textarea
+{
+    overflow: auto;
 }
 
 /**
@@ -322,19 +369,21 @@ textarea {
  * 2. Remove the padding in IE 10-.
  */
 
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+[type='checkbox'],
+[type='radio']
+{
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button
+{
+    height: auto;
 }
 
 /**
@@ -342,18 +391,21 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+[type='search']
+{
+    outline-offset: -2px; /* 2 */
+
+    -webkit-appearance: textfield; /* 1 */
 }
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration
+{
+    -webkit-appearance: none;
 }
 
 /**
@@ -361,9 +413,11 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+::-webkit-file-upload-button
+{
+    font: inherit; /* 2 */
+
+    -webkit-appearance: button; /* 1 */
 }
 
 /* Interactive
@@ -374,17 +428,20 @@ textarea {
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
 
-details, /* 1 */
-menu {
-  display: block;
+details,
+/* 1 */
+menu
+{
+    display: block;
 }
 
 /*
  * Add the correct display in all browsers.
  */
 
-summary {
-  display: list-item;
+summary
+{
+    display: list-item;
 }
 
 /* Scripting
@@ -394,16 +451,18 @@ summary {
  * Add the correct display in IE 9-.
  */
 
-canvas {
-  display: inline-block;
+canvas
+{
+    display: inline-block;
 }
 
 /**
  * Add the correct display in IE.
  */
 
-template {
-  display: none;
+template
+{
+    display: none;
 }
 
 /* Hidden
@@ -413,6 +472,7 @@ template {
  * Add the correct display in IE 10-.
  */
 
-[hidden] {
-  display: none;
+[hidden]
+{
+    display: none;
 }

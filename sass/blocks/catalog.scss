@@ -1,20 +1,16 @@
 .catalog {
   position: relative;
-
   background-color: $gray-249;
 }
 
 .catalog::after {
   @media (min-width: $tablet-width) {
     content: "";
-
     position: absolute;
     bottom: 0;
     left: 0;
-
     width: 100%;
     height: 23px;
-
     background-color: transparent;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -23,7 +19,6 @@
 
   @media (min-width: $desktop-width) {
     height: 36px;
-
     background-size: auto 36px;
   }
 }
@@ -33,7 +28,6 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -65,7 +59,6 @@
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
-
   background-color: $downy;
 
   @media (min-width: $tablet-width) {
@@ -85,7 +78,6 @@
 .catalog__link:active {
   position: relative;
   bottom: 5px;
-
   box-shadow: 0 5px 0 0 $downy;
 }
 
@@ -102,21 +94,18 @@
   max-width: 130px;
   margin-top: 5px;
   margin-right: 70px;
-
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: $white;
   text-transform: none;
-
   pointer-events: none;
 
   @media (min-width: $tablet-width) {
     width: 140px;
     margin-top: 0;
     margin-right: 0;
-
     font-size: 20px;
     line-height: 30px;
   }
@@ -124,9 +113,7 @@
 
 .catalog__link-icon {
   flex-shrink: 0;
-
   fill: $keppel;
-
   pointer-events: none;
 }
 
